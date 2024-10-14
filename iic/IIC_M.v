@@ -33,7 +33,7 @@ module IIC_M#(
     inout iic_sda
 );
 
-//状�?�机编码
+//状态机编码
 
 localparam  CLK_DIV = SYSCLK_FREQ / IIC_FREQ;
 
