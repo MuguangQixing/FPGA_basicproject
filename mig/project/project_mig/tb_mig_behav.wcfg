@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_mig_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_mig" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="206000025000fs"></ZoomStartTime>
+      <ZoomEndTime time="267100025001fs"></ZoomEndTime>
+      <Cursor1Time time="221050025000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/ui_clk" type="logic">
+      <obj_property name="ElementShortName">ui_clk</obj_property>
+      <obj_property name="ObjectShortName">ui_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/test_mig_inst/ui_rstn" type="logic">
+      <obj_property name="ElementShortName">ui_rstn</obj_property>
+      <obj_property name="ObjectShortName">ui_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_req" type="logic">
+      <obj_property name="ElementShortName">wr_req</obj_property>
+      <obj_property name="ObjectShortName">wr_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wr_en" type="logic">
+      <obj_property name="ElementShortName">app_wr_en</obj_property>
+      <obj_property name="ObjectShortName">app_wr_en</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_rdy" type="logic">
+      <obj_property name="ElementShortName">app_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_rdy</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wdf_end" type="logic">
+      <obj_property name="ElementShortName">app_wdf_end</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_end</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wdf_wren" type="logic">
+      <obj_property name="ElementShortName">app_wdf_wren</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_wren</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wdf_rdy" type="logic">
+      <obj_property name="ElementShortName">app_wdf_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_rdy</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wr_cmd" type="array">
+      <obj_property name="ElementShortName">app_wr_cmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">app_wr_cmd[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_data" type="array">
+      <obj_property name="ElementShortName">wr_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wdf_data" type="array">
+      <obj_property name="ElementShortName">app_wdf_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">app_wdf_data[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_addr" type="array">
+      <obj_property name="ElementShortName">wr_addr[27:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_addr[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wr_addr" type="array">
+      <obj_property name="ElementShortName">app_wr_addr[27:0]</obj_property>
+      <obj_property name="ObjectShortName">app_wr_addr[27:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_busy" type="logic">
+      <obj_property name="ElementShortName">wr_busy</obj_property>
+      <obj_property name="ObjectShortName">wr_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_data_valid" type="logic">
+      <obj_property name="ElementShortName">wr_data_valid</obj_property>
+      <obj_property name="ObjectShortName">wr_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_done" type="logic">
+      <obj_property name="ElementShortName">wr_done</obj_property>
+      <obj_property name="ObjectShortName">wr_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_valid" type="logic">
+      <obj_property name="ElementShortName">wr_valid</obj_property>
+      <obj_property name="ObjectShortName">wr_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/cnt_wr" type="array">
+      <obj_property name="ElementShortName">cnt_wr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_wr[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_req" type="logic">
+      <obj_property name="ElementShortName">rd_req</obj_property>
+      <obj_property name="ObjectShortName">rd_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_cmd" type="array">
+      <obj_property name="ElementShortName">app_rd_cmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">app_rd_cmd[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_en" type="logic">
+      <obj_property name="ElementShortName">app_rd_en</obj_property>
+      <obj_property name="ObjectShortName">app_rd_en</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rdy" type="logic">
+      <obj_property name="ElementShortName">app_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_rdy</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_data" type="array">
+      <obj_property name="ElementShortName">app_rd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_addr" type="array">
+      <obj_property name="ElementShortName">rd_addr[27:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_addr[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_addr" type="array">
+      <obj_property name="ElementShortName">app_rd_addr[27:0]</obj_property>
+      <obj_property name="ObjectShortName">app_rd_addr[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_busy" type="logic">
+      <obj_property name="ElementShortName">rd_busy</obj_property>
+      <obj_property name="ObjectShortName">rd_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_data_valid" type="logic">
+      <obj_property name="ElementShortName">rd_data_valid</obj_property>
+      <obj_property name="ObjectShortName">rd_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_done" type="logic">
+      <obj_property name="ElementShortName">rd_done</obj_property>
+      <obj_property name="ObjectShortName">rd_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_data_end" type="logic">
+      <obj_property name="ElementShortName">app_rd_data_end</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_data_valid" type="logic">
+      <obj_property name="ElementShortName">app_rd_data_valid</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/cnt_rd" type="array">
+      <obj_property name="ElementShortName">cnt_rd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_rd[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/cnt_cmd" type="array">
+      <obj_property name="ElementShortName">cnt_cmd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_cmd[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
