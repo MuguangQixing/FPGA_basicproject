@@ -1,18 +1,18 @@
 // `define VIDEO_1920_1080
 // `define VIDEO_1680_1050
 // `define VIDEO_1280_1024
-// `define VIDEO_1280_720
+`define VIDEO_1280_720
 // `define VIDEO_1024_768
 // `define VIDEO_800_600
- `define VIDEO_640_480
+ //`define VIDEO_640_480
 
 
 module VTC(
     input clk,
     input rstn,
     
-    output reg hsync,//行同步信号
-    output reg vsync,//场同步信号
+    output reg hsync,//行同步信�?
+    output reg vsync,//场同步信�?
     output reg de   //数据有效信号
 );
 
@@ -214,25 +214,25 @@ endmodule
 
 
 
-`timescale 1ns/1ps
-module tb_VTC();
-reg clk;
-reg rstn;
+//`timescale 1ns/1ps
+//module tb_VTC();
+//reg clk;
+//reg rstn;
 
-initial begin
-    clk = 0;
-    rstn = 0;
-    #100 rstn = 1;
-end
+//initial begin
+//    clk = 0;
+//    rstn = 0;
+//    #100 rstn = 1;
+//end
 
-always #20 clk = ~clk;//采用640x480的分辨率，使用25MHz的像素时钟
+//always #20 clk = ~clk;//采用640x480的分辨率，使�?25MHz的像素时�?
 
-VTC VTC_inst(
-    .clk(clk),
-    .rstn(rstn),
-    .hsync(),
-    .vsync(),
-    .de()
-);
+//VTC VTC_inst(
+//    .clk(clk),
+//    .rstn(rstn),
+//    .hsync(),
+//    .vsync(),
+//    .de()
+//);
 
-endmodule
+//endmodule

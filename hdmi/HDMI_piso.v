@@ -28,11 +28,11 @@ input [9:0] data_i,
 output data_o
     );
     
-    
+    wire SHIFTOUT1,SHIFTOUT2;
     
        OSERDESE2 #(
-      .DATA_RATE_OQ("DDR"),   // DDR, SDR:这里写成DDR代表双边沿发送
-      .DATA_RATE_TQ("DDR"),   // DDR, BUF, SDR
+      .DATA_RATE_OQ("DDR"),   // DDR, SDR:这里写成DDR代表双边沿发�?
+      .DATA_RATE_TQ("SDR"),   // DDR, BUF, SDR
       .DATA_WIDTH(10),         // Parallel data width (2-8,10,14)
       .INIT_OQ(1'b0),         // Initial value of OQ output (1'b0,1'b1)
       .INIT_TQ(1'b0),         // Initial value of TQ output (1'b0,1'b1)
@@ -79,12 +79,12 @@ output data_o
    
    
           OSERDESE2 #(
-      .DATA_RATE_OQ("DDR"),   // DDR, SDR:这里写成DDR代表双边沿发送
+      .DATA_RATE_OQ("DDR"),   // DDR, SDR:这里写成DDR代表双边沿发�?
       .DATA_RATE_TQ("DDR"),   // DDR, BUF, SDR
       .DATA_WIDTH(10),         // Parallel data width (2-8,10,14)
       .INIT_OQ(1'b0),         // Initial value of OQ output (1'b0,1'b1)
       .INIT_TQ(1'b0),         // Initial value of TQ output (1'b0,1'b1)
-      .SERDES_MODE("SLAVE"), // 级联，上面作为主机下面作为从机
+      .SERDES_MODE("SLAVE"), // 级联，上面作为主机下面作为从�?
       .SRVAL_OQ(1'b0),        // OQ output value when SR is used (1'b0,1'b1)
       .SRVAL_TQ(1'b0),        // TQ output value when SR is used (1'b0,1'b1)
       .TBYTE_CTL("FALSE"),    // Enable tristate byte operation (FALSE, TRUE)
@@ -130,36 +130,36 @@ endmodule
 
 
 
-module tb_piso();
+//module tb_piso();
 
-reg pclk;
-reg sclk;
-reg rstn;
-reg [9:0] datain;
-wire dataout;
+//reg pclk;
+//reg sclk;
+//reg rstn;
+//reg [9:0] datain;
+//wire dataout;
 
-initial begin
-pclk = 0;
-sclk = 0;
-rstn = 0;
-#100
-rstn = 1;
-end
-always #20 pclk = ~pclk;
-always #4 sclk = ~sclk;
+//initial begin
+//pclk = 0;
+//sclk = 0;
+//rstn = 0;
+//#100
+//rstn = 1;
+//end
+//always #20 pclk = ~pclk;
+//always #4 sclk = ~sclk;
 
-always @(posedge pclk) begin
-    if(~rstn)
-        datain <= 10'b0;
-    else
-        datain <= datain + 1;
-end
+//always @(posedge pclk) begin
+//    if(~rstn)
+//        datain <= 10'b0;
+//    else
+//        datain <= datain + 1;
+//end
 
-PISO piso_inst(
-.pclk(pclk),
-.sclk(sclk),
-.rst_n(rstn),
-.data_i(datain),
-.data_o(dataout)
-);
-endmodule
+//PISO piso_inst(
+//.pclk(pclk),
+//.sclk(sclk),
+//.rst_n(rstn),
+//.data_i(datain),
+//.data_o(dataout)
+//);
+//endmodule

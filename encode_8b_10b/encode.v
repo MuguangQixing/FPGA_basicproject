@@ -9,9 +9,9 @@ module Encoder (
      output reg [9:0] dout // data outputs
 );
 reg [3:0] n1d; //number of 1s in din
-reg [7:0] din_q;
+ reg [7:0] din_q;
  
- //计算像素数据�?"1"的个�?
+ //计算像素数据中"1"的个数
  always @ (posedge clkin) begin
  n1d <=#1 din[0] + din[1] + din[2] + din[3] + din[4] + din[5] + din[6] + din[7];
  din_q <=#1 din;
