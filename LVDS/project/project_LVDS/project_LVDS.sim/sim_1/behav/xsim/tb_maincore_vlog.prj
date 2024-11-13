@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../lvds_clockgen.v" \
+"../../../../../../serializer.v" \
+"../../../../../../video_lvds.v" \
+"../../../../../../maincore.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

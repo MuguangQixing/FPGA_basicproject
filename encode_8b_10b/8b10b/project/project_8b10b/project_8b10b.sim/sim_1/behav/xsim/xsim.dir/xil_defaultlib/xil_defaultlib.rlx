@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+H:/FPGA_basicproject/encode_8b_10b/8b10b/decode_8b10b.v,1730531531,verilog,,H:/FPGA_basicproject/encode_8b_10b/8b10b/encode_8b10b.v,,decode,,,,,,,,
+H:/FPGA_basicproject/encode_8b_10b/8b10b/encode_8b10b.v,1730543502,verilog,,H:/FPGA_basicproject/encode_8b_10b/8b10b/testbench_8b10b.v,,encode,,,,,,,,
+H:/FPGA_basicproject/encode_8b_10b/8b10b/project/project_8b10b/project_8b10b.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+H:/FPGA_basicproject/encode_8b_10b/8b10b/testbench_8b10b.v,1730533827,verilog,,,,test_8b10b,,,,,,,,

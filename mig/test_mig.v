@@ -5,24 +5,24 @@ input ui_clk,
 input ui_rstn,
 
 output reg           wr_req,
-output [27:0]    wr_req_addr,
+output [27:0]        wr_req_addr,
 output [15:0]        wr_length,
 output reg [127:0]   wr_data,
-input              wr_busy,
-input              wr_data_valid, 
-input              wr_done, 
-//---------rd-----------
+input                wr_busy,
+input                wr_data_valid, 
+input                wr_done, 
+//---------rd------------
 output reg           rd_req,
 output [27:0]        rd_req_addr,
 output [15:0]        rd_length,
-input [127:0]      rd_data,
-input              rd_busy,
-input              rd_data_valid, 
-input              rd_done
-);
+input  [127:0]       rd_data,
+input                rd_busy,
+input                rd_data_valid, 
+input                rd_done
+);  
 
-//---------状态机---------
-localparam [2:0] IDLE = 4'b0001, WR = 4'b0010,DELAY = 4'b0100, RD = 4'b1000;
+//---------状态机----------
+localparam [2:0] IDLE = 4'b0001, WR = 4'b0010, DELAY = 4'b0100, RD = 4'b1000;
 
 reg [2:0] state, next_state;
 
@@ -94,8 +94,8 @@ end
 
 assign wr_req_addr = 28'd0;
 assign rd_req_addr = 28'd0;
-assign wr_length = 255;
-assign rd_length = 255;
+assign wr_length = 256;
+assign rd_length = 256;
 
 always @(posedge ui_clk) begin
     if(~ui_rstn)

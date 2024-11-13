@@ -145,7 +145,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "H:/FPGA_basicproject/mig/mig_ctrl.v
 INFO: [VRFC 10-311] analyzing module mig_ctrl
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/FPGA_basicproject/mig/mig_ctrl_rd.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mig_ctrl_rd
-WARNING: [VRFC 10-3380] identifier 'cnt_rd' is used before its declaration [H:/FPGA_basicproject/mig/mig_ctrl_rd.v:53]
+WARNING: [VRFC 10-3380] identifier 'cnt_rd' is used before its declaration [H:/FPGA_basicproject/mig/mig_ctrl_rd.v:50]
 INFO: [VRFC 10-2263] Analyzing Verilog file "H:/FPGA_basicproject/mig/mig_ctrl_wr.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mig_ctrl_wr
 WARNING: [VRFC 10-3380] identifier 'wr_valid' is used before its declaration [H:/FPGA_basicproject/mig/mig_ctrl_wr.v:47]

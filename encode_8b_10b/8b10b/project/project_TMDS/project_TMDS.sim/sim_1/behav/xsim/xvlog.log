@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/FPGA_basicproject/encode_8b_10b/TMDS/TMDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TMDS
+INFO: [VRFC 10-311] analyzing module test

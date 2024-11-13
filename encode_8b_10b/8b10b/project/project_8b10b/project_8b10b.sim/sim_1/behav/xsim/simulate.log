@@ -1,0 +1,19 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+
+
+First, test by trying all 268 (256 Dx.y and 12 Kx.y)
+valid inputs, with both + and - starting disparity.
+We check that the encoder output and ending disparity is correct.
+We also check that the decoder matches.
+          0 errors in that testing.
+
+Now lets test all (legal and illegal) codes into the decoder.
+checking all possible decode inputs
+
+Done testing decoder.
+
+Total error count:           0
+Congratulations!
+
+$finish called at time : 3388 ns : File "H:/FPGA_basicproject/encode_8b_10b/8b10b/testbench_8b10b.v" Line 153

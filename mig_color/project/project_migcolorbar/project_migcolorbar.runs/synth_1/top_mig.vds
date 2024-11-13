@@ -1,0 +1,750 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 13 21:57:02 2024
+# Process ID: 16176
+# Current directory: H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1
+# Command line: vivado.exe -log top_mig.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_mig.tcl
+# Log file: H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/top_mig.vds
+# Journal file: H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_mig.tcl -notrace
+Command: synth_design -top top_mig -part xc7a35tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6200 
+WARNING: [Synth 8-6901] identifier 'cnt_rd' is used before its declaration [H:/FPGA_basicproject/mig_color/mig_ctrl_rd.v:50]
+WARNING: [Synth 8-6901] identifier 'wr_valid' is used before its declaration [H:/FPGA_basicproject/mig_color/mig_ctrl_wr.v:47]
+WARNING: [Synth 8-992] rgb_data is already implicitly declared earlier [H:/FPGA_basicproject/mig_color/top_mig.v:210]
+WARNING: [Synth 8-992] de is already implicitly declared earlier [H:/FPGA_basicproject/mig_color/top_mig.v:212]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 999.570 ; gain = 240.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_mig' [H:/FPGA_basicproject/mig_color/top_mig.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/.Xil/Vivado-16176-DESKTOP-DQRH7QF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/.Xil/Vivado-16176-DESKTOP-DQRH7QF/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mig_ctrl' [H:/FPGA_basicproject/mig_color/mig_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mig_ctrl_wr' [H:/FPGA_basicproject/mig_color/mig_ctrl_wr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mig_ctrl_wr' (2#1) [H:/FPGA_basicproject/mig_color/mig_ctrl_wr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mig_ctrl_rd' [H:/FPGA_basicproject/mig_color/mig_ctrl_rd.v:1]
+WARNING: [Synth 8-6104] Input port 'rd_data' has an internal driver [H:/FPGA_basicproject/mig_color/mig_ctrl_rd.v:82]
+WARNING: [Synth 8-6014] Unused sequential element cnt_cmd_reg was removed.  [H:/FPGA_basicproject/mig_color/mig_ctrl_rd.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mig_ctrl_rd' (3#1) [H:/FPGA_basicproject/mig_color/mig_ctrl_rd.v:1]
+WARNING: [Synth 8-3848] Net rd_data in module/entity mig_ctrl does not have driver. [H:/FPGA_basicproject/mig_color/mig_ctrl.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'mig_ctrl' (4#1) [H:/FPGA_basicproject/mig_color/mig_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/.Xil/Vivado-16176-DESKTOP-DQRH7QF/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (5#1) [H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/.Xil/Vivado-16176-DESKTOP-DQRH7QF/realtime/mig_7series_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'u_mig_7series_0' of module 'mig_7series_0' has 39 connections declared, but only 38 given [H:/FPGA_basicproject/mig_color/top_mig.v:130]
+INFO: [Synth 8-6157] synthesizing module 'wr_color' [H:/FPGA_basicproject/mig_color/wr_color.v:1]
+WARNING: [Synth 8-6104] Input port 'ui_wr_done' has an internal driver [H:/FPGA_basicproject/mig_color/wr_color.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'wr_color' (6#1) [H:/FPGA_basicproject/mig_color/wr_color.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rd_color' [H:/FPGA_basicproject/mig_color/rd_color.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/.Xil/Vivado-16176-DESKTOP-DQRH7QF/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (7#1) [H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/.Xil/Vivado-16176-DESKTOP-DQRH7QF/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rd_color' (8#1) [H:/FPGA_basicproject/mig_color/rd_color.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VTC' [H:/FPGA_basicproject/mig_color/VGA.v:10]
+	Parameter H_ACTIVE bound to: 1280 - type: integer 
+	Parameter H_FRONT_PORCH bound to: 110 - type: integer 
+	Parameter H_SYNC_TIME bound to: 40 - type: integer 
+	Parameter H_BACK_PORCH bound to: 220 - type: integer 
+	Parameter H_POLARITY bound to: 0 - type: integer 
+	Parameter V_ACTIVE bound to: 720 - type: integer 
+	Parameter V_FRONT_PORCH bound to: 5 - type: integer 
+	Parameter V_SYNC_TIME bound to: 5 - type: integer 
+	Parameter V_BACK_PORCH bound to: 20 - type: integer 
+	Parameter V_POLARITY bound to: 0 - type: integer 
+	Parameter H_TOTAL bound to: 1650 - type: integer 
+	Parameter V_TOTAL bound to: 750 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VTC' (9#1) [H:/FPGA_basicproject/mig_color/VGA.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_TMDS' [H:/FPGA_basicproject/mig_color/top_TMDS.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Encoder' [H:/FPGA_basicproject/mig_color/encode.v:2]
+	Parameter CTRLTOKEN0 bound to: 10'b1101010100 
+	Parameter CTRLTOKEN1 bound to: 10'b0010101011 
+	Parameter CTRLTOKEN2 bound to: 10'b0101010100 
+	Parameter CTRLTOKEN3 bound to: 10'b1010101011 
+INFO: [Synth 8-6155] done synthesizing module 'Encoder' (10#1) [H:/FPGA_basicproject/mig_color/encode.v:2]
+INFO: [Synth 8-6157] synthesizing module 'PISO' [H:/FPGA_basicproject/mig_color/HDMI_piso.v:4]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [H:/vivado/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (11#1) [H:/vivado/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [H:/vivado/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (11#1) [H:/vivado/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50288]
+INFO: [Synth 8-6155] done synthesizing module 'PISO' (12#1) [H:/FPGA_basicproject/mig_color/HDMI_piso.v:4]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [H:/vivado/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (13#1) [H:/vivado/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
+INFO: [Synth 8-6155] done synthesizing module 'top_TMDS' (14#1) [H:/FPGA_basicproject/mig_color/top_TMDS.v:1]
+WARNING: [Synth 8-3848] Net ui_wr_done in module/entity top_mig does not have driver. [H:/FPGA_basicproject/mig_color/top_mig.v:176]
+INFO: [Synth 8-6155] done synthesizing module 'top_mig' (15#1) [H:/FPGA_basicproject/mig_color/top_mig.v:1]
+WARNING: [Synth 8-3331] design wr_color has unconnected port wr_data_valid
+WARNING: [Synth 8-3331] design mig_ctrl_rd has unconnected port app_rd_data_end
+WARNING: [Synth 8-3331] design mig_ctrl has unconnected port app_sr_active
+WARNING: [Synth 8-3331] design mig_ctrl has unconnected port app_ref_ack
+WARNING: [Synth 8-3331] design mig_ctrl has unconnected port app_zq_ack
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.801 ; gain = 289.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.801 ; gain = 289.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.801 ; gain = 289.844
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1048.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_inst'
+Finished Parsing XDC File [h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_inst'
+Parsing XDC File [h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'rd_color_inst/FIFO_inst'
+Finished Parsing XDC File [h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'rd_color_inst/FIFO_inst'
+Parsing XDC File [h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'u_mig_7series_0'
+Finished Parsing XDC File [h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'u_mig_7series_0'
+Parsing XDC File [H:/FPGA_basicproject/mig_color/pin.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_wiz_0_inst/inst/clk_in1_clk_wiz_0'. [H:/FPGA_basicproject/mig_color/pin.xdc:14]
+Finished Parsing XDC File [H:/FPGA_basicproject/mig_color/pin.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [H:/FPGA_basicproject/mig_color/pin.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_mig_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/FPGA_basicproject/mig_color/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_mig_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_mig_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1170.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1170.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1170.867 ; gain = 411.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1170.867 ; gain = 411.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  h:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.srcs/sources_1/ip/mig_7series_0_1/mig_7series_0/mig_7series_0_in_context.xdc, line 97).
+Applied set_property DONT_TOUCH = true for clk_wiz_0_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rd_color_inst/FIFO_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_mig_7series_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1170.867 ; gain = 411.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [H:/FPGA_basicproject/mig_color/encode.v:96]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1170.867 ; gain = 411.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     28 Bit       Adders := 1     
+	   5 Input      5 Bit       Adders := 6     
+	   4 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               28 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mig_ctrl_wr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module mig_ctrl_rd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module mig_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module wr_color 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input    128 Bit        Muxes := 1     
+Module rd_color 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module VTC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      5 Bit       Adders := 2     
+	   4 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'encode_inst0/c1_q_reg' into 'encode_inst0/c0_q_reg' [H:/FPGA_basicproject/mig_color/encode.v:76]
+INFO: [Synth 8-4471] merging register 'encode_inst0/c1_reg_reg' into 'encode_inst0/c0_reg_reg' [H:/FPGA_basicproject/mig_color/encode.v:77]
+INFO: [Synth 8-4471] merging register 'encode_inst1/de_q_reg' into 'encode_inst0/de_q_reg' [H:/FPGA_basicproject/mig_color/encode.v:72]
+INFO: [Synth 8-4471] merging register 'encode_inst1/de_reg_reg' into 'encode_inst0/de_reg_reg' [H:/FPGA_basicproject/mig_color/encode.v:73]
+INFO: [Synth 8-4471] merging register 'encode_inst1/c0_q_reg' into 'encode_inst0/c0_q_reg' [H:/FPGA_basicproject/mig_color/encode.v:74]
+INFO: [Synth 8-4471] merging register 'encode_inst1/c0_reg_reg' into 'encode_inst0/c0_reg_reg' [H:/FPGA_basicproject/mig_color/encode.v:75]
+INFO: [Synth 8-4471] merging register 'encode_inst1/c1_q_reg' into 'encode_inst0/c0_q_reg' [H:/FPGA_basicproject/mig_color/encode.v:76]
+INFO: [Synth 8-4471] merging register 'encode_inst1/c1_reg_reg' into 'encode_inst0/c0_reg_reg' [H:/FPGA_basicproject/mig_color/encode.v:77]
+INFO: [Synth 8-4471] merging register 'encode_inst2/de_q_reg' into 'encode_inst0/de_q_reg' [H:/FPGA_basicproject/mig_color/encode.v:72]
+INFO: [Synth 8-4471] merging register 'encode_inst2/de_reg_reg' into 'encode_inst0/de_reg_reg' [H:/FPGA_basicproject/mig_color/encode.v:73]
+WARNING: [Synth 8-3331] design wr_color has unconnected port wr_data_valid
+WARNING: [Synth 8-3331] design mig_ctrl has unconnected port app_rd_data_end
+WARNING: [Synth 8-3331] design mig_ctrl has unconnected port app_sr_active
+WARNING: [Synth 8-3331] design mig_ctrl has unconnected port app_ref_ack
+WARNING: [Synth 8-3331] design mig_ctrl has unconnected port app_zq_ack
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\top_TMDS_inst/encode_inst0/c0_q_reg )
+INFO: [Synth 8-3886] merging instance 'top_TMDS_inst/encode_inst2/n0q_m_reg[0]' (FD) to 'top_TMDS_inst/encode_inst2/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'top_TMDS_inst/encode_inst1/n0q_m_reg[0]' (FD) to 'top_TMDS_inst/encode_inst1/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'top_TMDS_inst/encode_inst0/n0q_m_reg[0]' (FD) to 'top_TMDS_inst/encode_inst0/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'top_TMDS_inst/encode_inst0/c0_reg_reg' (FD) to 'top_TMDS_inst/encode_inst0/c0_q_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\wr_colorbar_inst/wr_req_addr_reg[8] )
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[0]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[1]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[2]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[3]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[4]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[5]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[6]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[7]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[8]' (FD) to 'wr_colorbar_inst/wr_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[9]' (FD) to 'wr_colorbar_inst/wr_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[10]' (FD) to 'wr_colorbar_inst/wr_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[11]' (FD) to 'wr_colorbar_inst/wr_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[12]' (FD) to 'wr_colorbar_inst/wr_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[13]' (FD) to 'wr_colorbar_inst/wr_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[14]' (FD) to 'wr_colorbar_inst/wr_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[15]' (FD) to 'wr_colorbar_inst/wr_data_reg[40]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[16]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[17]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[18]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[19]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[20]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[21]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[22]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[23]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[24]' (FD) to 'wr_colorbar_inst/wr_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[25]' (FD) to 'wr_colorbar_inst/wr_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[26]' (FD) to 'wr_colorbar_inst/wr_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[27]' (FD) to 'wr_colorbar_inst/wr_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[28]' (FD) to 'wr_colorbar_inst/wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[29]' (FD) to 'wr_colorbar_inst/wr_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[30]' (FD) to 'wr_colorbar_inst/wr_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[31]' (FD) to 'wr_colorbar_inst/wr_data_reg[56]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[32]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[33]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[34]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[35]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[36]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[37]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[38]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[39]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[40]' (FD) to 'wr_colorbar_inst/wr_data_reg[41]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[41]' (FD) to 'wr_colorbar_inst/wr_data_reg[42]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[42]' (FD) to 'wr_colorbar_inst/wr_data_reg[43]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[43]' (FD) to 'wr_colorbar_inst/wr_data_reg[44]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[44]' (FD) to 'wr_colorbar_inst/wr_data_reg[45]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[45]' (FD) to 'wr_colorbar_inst/wr_data_reg[46]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[46]' (FD) to 'wr_colorbar_inst/wr_data_reg[47]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[47]' (FD) to 'wr_colorbar_inst/wr_data_reg[72]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[48]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[49]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[50]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[51]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[52]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[53]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[54]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[55]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[56]' (FD) to 'wr_colorbar_inst/wr_data_reg[57]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[57]' (FD) to 'wr_colorbar_inst/wr_data_reg[58]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[58]' (FD) to 'wr_colorbar_inst/wr_data_reg[59]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[59]' (FD) to 'wr_colorbar_inst/wr_data_reg[60]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[60]' (FD) to 'wr_colorbar_inst/wr_data_reg[61]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[61]' (FD) to 'wr_colorbar_inst/wr_data_reg[62]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[62]' (FD) to 'wr_colorbar_inst/wr_data_reg[63]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[63]' (FD) to 'wr_colorbar_inst/wr_data_reg[88]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[64]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[65]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[66]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[67]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[68]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[69]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[70]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[71]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[72]' (FD) to 'wr_colorbar_inst/wr_data_reg[73]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[73]' (FD) to 'wr_colorbar_inst/wr_data_reg[74]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[74]' (FD) to 'wr_colorbar_inst/wr_data_reg[75]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[75]' (FD) to 'wr_colorbar_inst/wr_data_reg[76]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[76]' (FD) to 'wr_colorbar_inst/wr_data_reg[77]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[77]' (FD) to 'wr_colorbar_inst/wr_data_reg[78]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[78]' (FD) to 'wr_colorbar_inst/wr_data_reg[79]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[79]' (FD) to 'wr_colorbar_inst/wr_data_reg[104]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[80]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[81]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[82]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[83]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[84]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[85]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[86]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[87]' (FD) to 'wr_colorbar_inst/wr_data_reg[119]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[88]' (FD) to 'wr_colorbar_inst/wr_data_reg[89]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[89]' (FD) to 'wr_colorbar_inst/wr_data_reg[90]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[90]' (FD) to 'wr_colorbar_inst/wr_data_reg[91]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[91]' (FD) to 'wr_colorbar_inst/wr_data_reg[92]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[92]' (FD) to 'wr_colorbar_inst/wr_data_reg[93]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[93]' (FD) to 'wr_colorbar_inst/wr_data_reg[94]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[94]' (FD) to 'wr_colorbar_inst/wr_data_reg[95]'
+INFO: [Synth 8-3886] merging instance 'wr_colorbar_inst/wr_data_reg[95]' (FD) to 'wr_colorbar_inst/wr_data_reg[120]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\wr_colorbar_inst/wr_data_reg[119] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\top_TMDS_inst/encode_inst0/c0_q_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1170.867 ; gain = 411.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1170.867 ; gain = 411.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1170.867 ; gain = 411.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1174.820 ; gain = 415.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_wiz_0        |         1|
+|2     |mig_7series_0    |         1|
+|3     |fifo_generator_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |clk_wiz_0        |     1|
+|2     |fifo_generator_0 |     1|
+|3     |mig_7series_0    |     1|
+|4     |CARRY4           |    62|
+|5     |LUT1             |    14|
+|6     |LUT2             |    48|
+|7     |LUT3             |   149|
+|8     |LUT4             |    81|
+|9     |LUT5             |    91|
+|10    |LUT6             |   115|
+|11    |OSERDESE2        |     4|
+|12    |OSERDESE2_1      |     4|
+|13    |FDCE             |    42|
+|14    |FDRE             |   314|
+|15    |FDSE             |     2|
+|16    |IBUF             |     1|
+|17    |OBUFDS           |     4|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------------------+------------+------+
+|      |Instance             |Module      |Cells |
++------+---------------------+------------+------+
+|1     |top                  |            |  1159|
+|2     |  mig_ctrl_inst      |mig_ctrl    |   232|
+|3     |    mig_ctrl_rd_inst |mig_ctrl_rd |   110|
+|4     |    mig_ctrl_wr_inst |mig_ctrl_wr |   122|
+|5     |  rd_color_inst      |rd_color    |   104|
+|6     |  top_TMDS_inst      |top_TMDS    |   367|
+|7     |    encode_inst0     |Encoder     |   119|
+|8     |    encode_inst1     |Encoder_0   |   117|
+|9     |    encode_inst2     |Encoder_1   |   119|
+|10    |    piso_inst0       |PISO        |     2|
+|11    |    piso_inst1       |PISO_2      |     2|
+|12    |    piso_inst2       |PISO_3      |     2|
+|13    |    piso_instclk     |PISO_4      |     2|
+|14    |  vtc_inst           |VTC         |   183|
+|15    |  wr_colorbar_inst   |wr_color    |    90|
++------+---------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1180.031 ; gain = 299.008
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1180.031 ; gain = 421.074
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1180.031 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1180.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+170 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1180.031 ; gain = 688.051
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1180.031 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'H:/FPGA_basicproject/mig_color/project/project_migcolorbar/project_migcolorbar.runs/synth_1/top_mig.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_mig_utilization_synth.rpt -pb top_mig_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 21:57:42 2024...

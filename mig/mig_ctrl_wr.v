@@ -45,12 +45,12 @@ always @(posedge ui_clk) begin
     else if(wr_req)
         wr_addr <= wr_req_addr;
     else if(wr_valid)
-        wr_addr <= wr_addr + 8;
+        wr_addr <= wr_addr + 8;//时钟比例4:1，burst length = 8
 end
 
 wire wr_valid;//每次成功写入一个数据，wr_valid置1
 
-/*5个信号线拉高的时候写入数据：不能采用always语句，因为不同时*/
+/*5个信号线拉高的时候写入数据*/
 assign app_wr_en     = (app_rdy && app_wdf_rdy && wr_en) ;
 assign app_wdf_end   = (app_rdy && app_wdf_rdy && wr_en) ;
 assign app_wdf_wren  = (app_rdy && app_wdf_rdy && wr_en) ;

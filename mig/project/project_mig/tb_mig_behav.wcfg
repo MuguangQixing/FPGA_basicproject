@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="206000025000fs"></ZoomStartTime>
-      <ZoomEndTime time="267100025001fs"></ZoomEndTime>
-      <Cursor1Time time="221050025000fs"></Cursor1Time>
+      <ZoomStartTime time="188613333334fs"></ZoomStartTime>
+      <ZoomEndTime time="275713333335fs"></ZoomEndTime>
+      <Cursor1Time time="214730000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="176"></NameColumnWidth>
-      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="36" />
+   <WVObjectSize size="35" />
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/ui_clk" type="logic">
       <obj_property name="ElementShortName">ui_clk</obj_property>
       <obj_property name="ObjectShortName">ui_clk</obj_property>
@@ -98,6 +98,9 @@
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/app_wr_addr" type="array">
       <obj_property name="ElementShortName">app_wr_addr[27:0]</obj_property>
       <obj_property name="ObjectShortName">app_wr_addr[27:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_busy" type="logic">
       <obj_property name="ElementShortName">wr_busy</obj_property>
@@ -106,6 +109,8 @@
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_data_valid" type="logic">
       <obj_property name="ElementShortName">wr_data_valid</obj_property>
       <obj_property name="ObjectShortName">wr_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_done" type="logic">
       <obj_property name="ElementShortName">wr_done</obj_property>
@@ -114,6 +119,8 @@
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/wr_valid" type="logic">
       <obj_property name="ElementShortName">wr_valid</obj_property>
       <obj_property name="ObjectShortName">wr_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_wr_inst/cnt_wr" type="array">
       <obj_property name="ElementShortName">cnt_wr[15:0]</obj_property>
@@ -131,13 +138,13 @@
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_en" type="logic">
       <obj_property name="ElementShortName">app_rd_en</obj_property>
       <obj_property name="ObjectShortName">app_rd_en</obj_property>
-      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rdy" type="logic">
       <obj_property name="ElementShortName">app_rdy</obj_property>
       <obj_property name="ObjectShortName">app_rdy</obj_property>
-      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_data" type="array">
@@ -150,13 +157,6 @@
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_data" type="array">
       <obj_property name="ElementShortName">app_rd_data[127:0]</obj_property>
       <obj_property name="ObjectShortName">app_rd_data[127:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_addr" type="array">
-      <obj_property name="ElementShortName">rd_addr[27:0]</obj_property>
-      <obj_property name="ObjectShortName">rd_addr[27:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
@@ -175,6 +175,8 @@
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_data_valid" type="logic">
       <obj_property name="ElementShortName">rd_data_valid</obj_property>
       <obj_property name="ObjectShortName">rd_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_done" type="logic">
       <obj_property name="ElementShortName">rd_done</obj_property>
@@ -183,10 +185,14 @@
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_data_end" type="logic">
       <obj_property name="ElementShortName">app_rd_data_end</obj_property>
       <obj_property name="ObjectShortName">app_rd_data_end</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/app_rd_data_valid" type="logic">
       <obj_property name="ElementShortName">app_rd_data_valid</obj_property>
       <obj_property name="ObjectShortName">app_rd_data_valid</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_mig/top_mig_inst/mig_ctrl_inst/mig_ctrl_rd_inst/rd_en" type="logic">
       <obj_property name="ElementShortName">rd_en</obj_property>

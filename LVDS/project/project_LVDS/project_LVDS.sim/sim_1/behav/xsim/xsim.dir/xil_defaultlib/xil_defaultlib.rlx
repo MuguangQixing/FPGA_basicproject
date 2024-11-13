@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+H:/FPGA_basicproject/LVDS/LVDS.v,1730610109,verilog,,H:/FPGA_basicproject/LVDS/data_generator.v,,lvds_output_driver,,,../../../../project_LVDS.srcs/sources_1/ip/clk_wiz_0,,,,,
+H:/FPGA_basicproject/LVDS/LVDS_top.v,1730609157,verilog,,,,LVDS_top;tb_LVDS,,,../../../../project_LVDS.srcs/sources_1/ip/clk_wiz_0,,,,,
+H:/FPGA_basicproject/LVDS/data_generator.v,1730609845,verilog,,H:/FPGA_basicproject/LVDS/LVDS_top.v,,data_generator,,,../../../../project_LVDS.srcs/sources_1/ip/clk_wiz_0,,,,,
+H:/FPGA_basicproject/LVDS/project/project_LVDS/project_LVDS.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+H:/FPGA_basicproject/LVDS/project/project_LVDS/project_LVDS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1730607632,verilog,,H:/FPGA_basicproject/LVDS/LVDS.v,,clk_wiz_0,,,../../../../project_LVDS.srcs/sources_1/ip/clk_wiz_0,,,,,
+H:/FPGA_basicproject/LVDS/project/project_LVDS/project_LVDS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1730607632,verilog,,H:/FPGA_basicproject/LVDS/project/project_LVDS/project_LVDS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../project_LVDS.srcs/sources_1/ip/clk_wiz_0,,,,,

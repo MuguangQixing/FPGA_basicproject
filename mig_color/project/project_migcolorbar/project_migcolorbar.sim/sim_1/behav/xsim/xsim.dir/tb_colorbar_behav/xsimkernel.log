@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_colorbar_behav/xsimk.exe -simmode gui -wdb tb_colorbar_behav.wdb -simrunnum 0 -socket 50716
+Design successfully loaded
+Design Loading Memory Usage: 68184 KB (Peak: 68184 KB)
+Design Loading CPU Usage: 140 ms
+Simulation completed
+Simulation Memory Usage: 87152 KB (Peak: 87152 KB)
+Simulation CPU Usage: 1899187 ms

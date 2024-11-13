@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_LVDS_behav/xsimk.exe -simmode gui -wdb tb_LVDS_behav.wdb -simrunnum 0 -socket 50113
+Design successfully loaded
+Design Loading Memory Usage: 9328 KB (Peak: 9328 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 11284 KB (Peak: 11284 KB)
+Simulation CPU Usage: 1500 ms

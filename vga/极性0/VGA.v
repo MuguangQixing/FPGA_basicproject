@@ -188,7 +188,10 @@ end
 always @(posedge clk) begin
     if(~rstn)
         de <= 0;
-    else if ((cnt_h > H_SYNC_TIME +  H_BACK_PORCH - 1 )&&(cnt_h <= H_TOTAL - H_FRONT_PORCH - 1)&&(cnt_v > V_SYNC_TIME + V_BACK_PORCH - 1)&&(cnt_v <= V_TOTAL - V_FRONT_PORCH - 1))
+    else if ((cnt_h > H_SYNC_TIME +  H_BACK_PORCH - 1 )
+           &&(cnt_h <= H_TOTAL - H_FRONT_PORCH - 1)
+           &&(cnt_v > V_SYNC_TIME + V_BACK_PORCH - 1)
+           &&(cnt_v <= V_TOTAL - V_FRONT_PORCH - 1))
         de <= 1;
     else
         de <= 0;

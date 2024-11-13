@@ -11,7 +11,7 @@ output              rd_data_valid,
 output              rd_done, 
 
 //-------------mig-------------
-    output [27:0]	app_rd_addr,
+    output reg [27:0]	app_rd_addr,
     output [2:0]	app_rd_cmd,
     output			app_rd_en,
     input			app_rdy,
@@ -36,23 +36,18 @@ always @(posedge ui_clk) begin
 end
 
 
-reg [27:0] rd_addr;
 always @(posedge ui_clk) begin
     if(~rst_n)
-        rd_addr <= 0;
+        app_rd_addr <= 0;
     else if(rd_done)
-        rd_addr <= 0;
-    else if(rd_req)
-        rd_addr <= rd_req_addr;
-    else if(app_rd_en)
-        rd_addr <= rd_addr + 8;
+        app_rd_addr <= 0;
+    else if(app_rd_en && app_rdy)
+        app_rd_addr <= app_rd_addr + 8;
 end
-
-
 
 assign app_rd_en  = (app_rdy && rd_en &&(cnt_rd <= rd_length - 1)) ;
 assign app_rd_cmd = 3'b001;
-assign app_rd_addr = rd_addr;
+
 
 reg   [15:0] cnt_rd;
 always @(posedge ui_clk) begin
