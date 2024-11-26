@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+H:/FPGA_basicproject/RGMII/RGMII_rx.v,1732177092,verilog,,H:/FPGA_basicproject/RGMII/RGMII_tx.v,,rgmii_rx,,,,,,,,
+H:/FPGA_basicproject/RGMII/RGMII_tx.v,1732168719,verilog,,H:/FPGA_basicproject/RGMII/top_rgmii.v,,rgmii_tx,,,,,,,,
+H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+H:/FPGA_basicproject/RGMII/tb_rgmii.v,1732176884,verilog,,,,tb_rgmireg,,,,,,,,
+H:/FPGA_basicproject/RGMII/top_rgmii.v,1732103363,verilog,,H:/FPGA_basicproject/RGMII/tb_rgmii.v,,top_rgmii,,,,,,,,

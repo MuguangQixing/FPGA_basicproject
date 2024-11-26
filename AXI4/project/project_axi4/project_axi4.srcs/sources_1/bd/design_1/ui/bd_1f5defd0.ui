@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.576942",
+   "Default View_TopLeft":"-109,-274",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR3_0 -pg 1 -lvl 6 -x 1860 -y 480 -defaultsOSRD
+preplace port port-id_resetn_0 -pg 1 -lvl 0 -x 0 -y 610 -defaultsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 5 -x 1690 -y 520 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 1390 -y 620 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1390 -y 490 -defaultsOSRD
+preplace inst rst_mig_7series_0_100M -pg 1 -lvl 1 -x 200 -y 480 -defaultsOSRD
+preplace inst uiFDMA_0 -pg 1 -lvl 3 -x 1010 -y 170 -defaultsOSRD
+preplace inst rw_ctrl_0 -pg 1 -lvl 2 -x 610 -y 150 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 3 -x 1010 -y 490 -defaultsOSRD
+preplace netloc resetn_0_1 1 0 4 NJ 610 NJ 610 NJ 610 NJ
+preplace netloc clk_in1_0_1 1 0 4 NJ 630 NJ 630 NJ 630 NJ
+preplace netloc clk_wiz_0_clk_out1 1 4 1 1550 530n
+preplace netloc clk_wiz_0_locked 1 4 1 1540 510n
+preplace netloc mig_7series_0_ui_clk 1 0 6 20 370 370 400 790 590 1210 710 NJ 710 1820
+preplace netloc mig_7series_0_mmcm_locked 1 0 6 30 690 NJ 690 NJ 690 NJ 690 1530J 420 1830
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 0 6 30 380 NJ 380 NJ 380 NJ 380 NJ 380 1840
+preplace netloc rst_mig_7series_0_100M_peripheral_aresetn 1 1 4 380 390 800 600 1240 700 1560J
+preplace netloc rw_ctrl_0_fdma_waddr 1 2 1 N 70
+preplace netloc rw_ctrl_0_fdma_wareq 1 2 1 N 90
+preplace netloc rw_ctrl_0_fdma_wsize 1 2 1 N 110
+preplace netloc rw_ctrl_0_fdma_wdata 1 2 1 810 130n
+preplace netloc rw_ctrl_0_fdma_wready 1 2 1 N 150
+preplace netloc rw_ctrl_0_fdma_raddr 1 2 1 N 170
+preplace netloc rw_ctrl_0_fdma_rareq 1 2 1 N 190
+preplace netloc rw_ctrl_0_fdma_rsize 1 2 1 N 210
+preplace netloc rw_ctrl_0_fdma_rready 1 2 1 N 230
+preplace netloc uiFDMA_0_fdma_rvalid 1 1 3 440 420 830 370 1190
+preplace netloc uiFDMA_0_fdma_rdata 1 1 3 430 410 820 360 1200
+preplace netloc uiFDMA_0_fdma_rbusy 1 1 3 420 350 NJ 350 1210
+preplace netloc uiFDMA_0_fdma_rend 1 1 3 410 340 NJ 340 1220
+preplace netloc uiFDMA_0_fdma_wend 1 1 3 400 330 NJ 330 1230
+preplace netloc uiFDMA_0_fdma_wvalid 1 1 3 390 430 840 390 1240
+preplace netloc uiFDMA_0_fdma_wbusy 1 1 3 440 10 NJ 10 1190
+preplace netloc mig_7series_0_DDR3 1 5 1 N 480
+preplace netloc uiFDMA_0_M_AXI 1 3 1 1250 100n
+preplace netloc axi_smc_M00_AXI 1 4 1 N 490
+levelinfo -pg 1 0 200 610 1010 1390 1690 1860
+pagesize -pg 1 -db -bbox -sgen -110 0 1970 720
+"
+}
+{
+   "da_axi4_cnt":"1"
+}

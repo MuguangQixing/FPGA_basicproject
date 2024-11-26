@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Nov 21 17:57:12 2024
+# Process ID: 10440
+# Current directory: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35260 H:\FPGA_basicproject\RGMII\project_rgmii\project_RGMII\project_RGMII.xpr
+# Log file: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/vivado.log
+# Journal file: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII\vivado.jou
+# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_rgmireg.tcl
+close_sim

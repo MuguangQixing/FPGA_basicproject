@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Nov 21 16:57:58 2024
+# Process ID: 30764
+# Current directory: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent44392 H:\FPGA_basicproject\RGMII\project_rgmii\project_RGMII\project_RGMII.xpr
+# Log file: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/vivado.log
+# Journal file: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII\vivado.jou
+# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_rgmireg.tcl
+relaunch_sim
+relaunch_sim
+create_project project_trry H:/FPGA_basicproject/gmii_to_rgmii/project/project_trry -part xc7a35tfgg484-1
+add_files -norecurse {H:/FPGA_basicproject/gmii_to_rgmii/rgmii_tx.v H:/FPGA_basicproject/gmii_to_rgmii/rgmii_rx.v H:/FPGA_basicproject/gmii_to_rgmii/gmii_to_rgmii.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project project_RGMII
+current_project project_trry
+close_project
+close_sim
+launch_simulation

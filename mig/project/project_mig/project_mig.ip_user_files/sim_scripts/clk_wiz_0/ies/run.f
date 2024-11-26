@@ -1,8 +1,8 @@
 -makelib ies_lib/xpm -sv \
-  "H:/vivado/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "H:/vivado/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "H:/vivado/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+  "H:/vivado/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../../project_mig.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \

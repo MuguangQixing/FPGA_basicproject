@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Nov 26 20:05:38 2024
+# Process ID: 42188
+# Current directory: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1
+# Command line: vivado.exe -log top_arp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_arp.tcl
+# Log file: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.vds
+# Journal file: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1\vivado.jou
+# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+source top_arp.tcl -notrace

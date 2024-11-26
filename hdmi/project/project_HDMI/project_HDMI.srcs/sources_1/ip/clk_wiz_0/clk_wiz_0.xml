@@ -473,6 +473,15 @@
           </spirit:vendorExtensions>
         </spirit:parameter>
         <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
           <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.PHASE">0.000</spirit:value>
           <spirit:vendorExtensions>
@@ -528,6 +537,15 @@
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -643,7 +661,7 @@
             <spirit:name>INTERRUPT</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>ip2intc_irpt</spirit:name>
+            <spirit:name>interrupt</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -1021,6 +1039,15 @@
           </spirit:vendorExtensions>
         </spirit:parameter>
         <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLOCK_CLK_IN1.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
           <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLOCK_CLK_IN1.PHASE">0.000</spirit:value>
           <spirit:vendorExtensions>
@@ -1090,6 +1117,15 @@
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLOCK_CLK_OUT1.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLOCK_CLK_OUT1.FREQ_TOLERANCE_HZ">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1169,6 +1205,15 @@
           </spirit:vendorExtensions>
         </spirit:parameter>
         <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLOCK_CLK_OUT2.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
           <spirit:name>PHASE</spirit:name>
           <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLOCK_CLK_OUT2.PHASE">0.000</spirit:value>
           <spirit:vendorExtensions>
@@ -1225,7 +1270,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ba011786</spirit:value>
+            <spirit:value>9:67192104</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1234,18 +1279,18 @@
         <spirit:displayName>Verilog Instantiation Template</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.template</spirit:envIdentifier>
         <spirit:language>verilog</spirit:language>
-        <spirit:modelName>clk_wiz_v6_0_4</spirit:modelName>
+        <spirit:modelName>clk_wiz_v6_0_6</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_veriloginstantiationtemplate_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:27:40 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:02 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b55c809</spirit:value>
+            <spirit:value>9:6e29d5cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1253,18 +1298,18 @@
         <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
         <spirit:displayName>Synthesis</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
-        <spirit:modelName>clk_wiz_v6_0_4</spirit:modelName>
+        <spirit:modelName>clk_wiz_v6_0_6</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:27:43 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b55c809</spirit:value>
+            <spirit:value>9:6e29d5cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1275,7 +1320,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b55c809</spirit:value>
+            <spirit:value>9:6e29d5cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1290,11 +1335,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:27:43 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b55c809</spirit:value>
+            <spirit:value>9:6e29d5cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1302,18 +1347,18 @@
         <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
         <spirit:displayName>Simulation</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
-        <spirit:modelName>clk_wiz_v6_0_4</spirit:modelName>
+        <spirit:modelName>clk_wiz_v6_0_6</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:27:43 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c5cc044f</spirit:value>
+            <spirit:value>9:a0b0198a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1328,11 +1373,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:27:43 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c5cc044f</spirit:value>
+            <spirit:value>9:a0b0198a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1346,11 +1391,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:27:43 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b55c809</spirit:value>
+            <spirit:value>9:6e29d5cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1364,11 +1409,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:27:43 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b55c809</spirit:value>
+            <spirit:value>9:6e29d5cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1382,11 +1427,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Nov 01 07:28:16 UTC 2024</spirit:value>
+            <spirit:value>Wed Nov 13 16:17:49 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b55c809</spirit:value>
+            <spirit:value>9:6e29d5cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3757,37 +3802,37 @@
         <spirit:name>mmcm_pll_drp_func_7s_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_7s_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_plus_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_plus_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>clk_wiz_0_clk_wiz.v</spirit:name>
@@ -3808,42 +3853,42 @@
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_7s_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_plus_pll.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>mmcm_pll_drp_func_us_plus_mmcm.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>clk_wiz_v6_0_4</spirit:logicalName>
+        <spirit:logicalName>clk_wiz_v6_0_6</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>clk_wiz_0_clk_wiz.v</spirit:name>
@@ -4974,7 +5019,7 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.ADDR_WIDTH" xilinx:valueSource="auto"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.ARUSER_WIDTH" xilinx:valueSource="constant"/>
@@ -5016,9 +5061,9 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="efefe28e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7591bddb"/>
+      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0d9e23d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="366d88f6"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="4f3d3737"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="7cef30f8"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="00954ddc"/>

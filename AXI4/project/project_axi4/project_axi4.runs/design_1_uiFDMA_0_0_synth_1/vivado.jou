@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Nov 19 22:56:02 2024
+# Process ID: 44596
+# Current directory: H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_uiFDMA_0_0_synth_1
+# Command line: vivado.exe -log design_1_uiFDMA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_uiFDMA_0_0.tcl
+# Log file: H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_uiFDMA_0_0_synth_1/design_1_uiFDMA_0_0.vds
+# Journal file: H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_uiFDMA_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+source design_1_uiFDMA_0_0.tcl -notrace

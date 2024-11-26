@@ -1,0 +1,430 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Nov 19 23:00:30 2024
+# Process ID: 35788
+# Current directory: H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_rw_ctrl_0_0_synth_1
+# Command line: vivado.exe -log design_1_rw_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rw_ctrl_0_0.tcl
+# Log file: H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_rw_ctrl_0_0_synth_1/design_1_rw_ctrl_0_0.vds
+# Journal file: H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_rw_ctrl_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+source design_1_rw_ctrl_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_rw_ctrl_0_0 -part xc7a35tfgg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26124
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_rw_ctrl_0_0' [h:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.gen/sources_1/bd/design_1/ip/design_1_rw_ctrl_0_0/synth/design_1_rw_ctrl_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'rw_ctrl' [H:/FPGA_basicproject/AXI4/rw_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rw_ctrl' (1#1) [H:/FPGA_basicproject/AXI4/rw_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rw_ctrl_0_0' (2#1) [h:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.gen/sources_1/bd/design_1/ip/design_1_rw_ctrl_0_0/synth/design_1_rw_ctrl_0_0.v:58]
+WARNING: [Synth 8-7129] Port fdma_rdata[127] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[126] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[125] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[124] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[123] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[122] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[121] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[120] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[119] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[118] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[117] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[116] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[115] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[114] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[113] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[112] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[111] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[110] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[109] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[108] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[107] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[106] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[105] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[104] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[103] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[102] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[101] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[100] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[99] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[98] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[97] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[96] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[95] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[94] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[93] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[92] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[91] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[90] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[89] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[88] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[87] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[86] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[85] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[84] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[83] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[82] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[81] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[80] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[79] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[78] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[77] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[76] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[75] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[74] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[73] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[72] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[71] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[70] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[69] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[68] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[67] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[66] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[65] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[64] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[63] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[62] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[61] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[60] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[59] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[58] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[57] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[56] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[55] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[54] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[53] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[52] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[51] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[50] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[49] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[48] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[47] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[46] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[45] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[44] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[43] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[42] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[41] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[40] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[39] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[38] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[37] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[36] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[35] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[34] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[33] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[32] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[31] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[30] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[29] in module rw_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fdma_rdata[28] in module rw_ctrl is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1262.676 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rw_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                   WRITE |                             0010 |                             0010
+                    WAIT |                             0100 |                             0100
+                    READ |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'rw_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[31] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_waddr[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[8] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[7] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[6] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[5] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_wready driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[31] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_raddr[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[8] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[7] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[6] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[5] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rsize[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_rw_ctrl_0_0 has port fdma_rready driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    51|
+|2     |LUT1   |     3|
+|3     |LUT2   |     1|
+|4     |LUT3   |    43|
+|5     |LUT4   |     5|
+|6     |LUT5   |    11|
+|7     |LUT6   |     2|
+|8     |FDRE   |   165|
+|9     |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 130 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1262.676 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1262.676 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1262.676 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 3932c22b
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1262.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_rw_ctrl_0_0_synth_1/design_1_rw_ctrl_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_rw_ctrl_0_0, cache-ID = 12002337bf22f061
+INFO: [Common 17-1381] The checkpoint 'H:/FPGA_basicproject/AXI4/project/project_axi4/project_axi4.runs/design_1_rw_ctrl_0_0_synth_1/design_1_rw_ctrl_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_rw_ctrl_0_0_utilization_synth.rpt -pb design_1_rw_ctrl_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 23:01:04 2024...
