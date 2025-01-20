@@ -1,0 +1,97 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Jan 20 15:05:36 2025
+| Host         : DESKTOP-JNHE9QV running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    13 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              43 |           34 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              32 |           13 |
+| Yes          | Yes                   | No                     |             364 |           97 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+----------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|               Clock Signal              |                 Enable Signal                |             Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------+----------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc |                                              |                                          |                4 |              4 |         1.00 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc |                                              | arp_inst/arp_rx_inst/state[4]_i_1_n_0    |                6 |              6 |         1.00 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc |                                              | arp_inst/arp_tx_inst/crc_init_i_1_n_0    |                5 |              6 |         1.20 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc |                                              | arp_inst/arp_rx_inst/cnt_byte[7]_i_1_n_0 |                4 |              8 |         2.00 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_ctrl_inst/arp_tx_en                      | arp_inst/arp_tx_inst/cnt_byte[7]_i_1_n_0 |                5 |              8 |         1.60 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/arp_tx_inst/arp_tx_data[7]_i_1_n_0  | arp_inst/arp_tx_inst/crc_init_i_1_n_0    |                6 |              8 |         1.33 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | key2_IBUF                                    | udp_top_inst/udp_rx_inst/SR[0]           |               10 |             12 |         1.20 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | udp_top_inst/udp_tx_inst/udp_tx_done_reg_n_0 | udp_top_inst/udp_rx_inst/SR[0]           |                4 |             16 |         4.00 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | udp_top_inst/udp_rx_inst/ip_cnt_num0         | udp_top_inst/udp_rx_inst/SR[0]           |                7 |             16 |         2.29 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | udp_top_inst/udp_rx_inst/udp_cnt_num0        | udp_top_inst/udp_rx_inst/SR[0]           |                4 |             16 |         4.00 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/arp_rx_inst/op[15]_i_1_n_0          | arp_inst/arp_rx_inst/state[4]_i_1_n_0    |                3 |             16 |         5.33 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc |                                              | udp_top_inst/udp_rx_inst/SR[0]           |               19 |             23 |         1.21 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | udp_top_inst/udp_rx_inst/des_ip0             | udp_top_inst/udp_rx_inst/SR[0]           |                6 |             32 |         5.33 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/arp_rx_inst/eth_ip_s[31]_i_1_n_0    | arp_inst/arp_rx_inst/state[4]_i_1_n_0    |                7 |             32 |         4.57 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/arp_rx_inst/eth_ip[31]_i_1_n_0      | arp_inst/arp_rx_inst/state[4]_i_1_n_0    |                7 |             32 |         4.57 |
+| ~top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/crc_inst/crc_data[31]_i_1_n_0       | udp_top_inst/udp_rx_inst/SR[0]           |               13 |             32 |         2.46 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/arp_rx_inst/eth_mac[47]_i_1_n_0     | arp_inst/arp_rx_inst/state[4]_i_1_n_0    |               10 |             48 |         4.80 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/arp_rx_inst/eth_mac_s[47]_i_1_n_0   | arp_inst/arp_rx_inst/state[4]_i_1_n_0    |               11 |             48 |         4.36 |
+|  top_rgmii_inst/rgmii_rx_inst/rgmii_txc | arp_inst/arp_rx_inst/pc_mac__0               | arp_inst/arp_rx_inst/state[4]_i_1_n_0    |               17 |             80 |         4.71 |
++-----------------------------------------+----------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+
+

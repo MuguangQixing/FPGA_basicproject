@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Jan 20 14:40:45 2025
+# Process ID: 12204
+# Current directory: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17864 E:\FPGA_Project\2_FPGA_Basic_project\UDP\project\project_udp\project_udp.xpr
+# Log file: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/vivado.log
+# Journal file: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp\vivado.jou
+# Running On: DESKTOP-JNHE9QV, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+place_ports {ETH_RXD[0]} V19
+place_ports {ETH_RXD[1]} W20
+place_ports {ETH_RXD[2]} AA21
+place_ports {ETH_RXD[2]} AA20
+place_ports {ETH_RXD[3]} AA21
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_RXD[3]} {ETH_RXD[2]} {ETH_RXD[1]} {ETH_RXD[0]}]]
+place_ports {ETH_TXD[0]} W21
+place_ports {ETH_TXD[1]} W22
+place_ports {ETH_TXD[2]} Y21
+place_ports {ETH_TXD[3]} Y22
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_TXD[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_TXD[3]} {ETH_TXD[2]} {ETH_TXD[1]} {ETH_TXD[0]}]]
+set_property package_pin "" [get_ports [list  ETH_RXC]]
+place_ports ETH_RXC W19
+place_ports ETH_RXV V18
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXC]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXV]]
+place_ports ETH_TXC AB21
+place_ports ETH_TXV AB22
+place_ports key1 R14
+place_ports key2 P14
+place_ports rstn N14
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXC]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXV]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list key1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list key2]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rstn]]
+file mkdir E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new
+close [ open E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc w ]
+add_files -fileset constrs_1 E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc
+set_property target_constrs_file E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

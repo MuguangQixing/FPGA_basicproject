@@ -2,10 +2,10 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Thu Nov 21 17:57:12 2024
-# Process ID: 10440
+# Start of session at: Sat Dec  7 12:00:45 2024
+# Process ID: 16548
 # Current directory: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35260 H:\FPGA_basicproject\RGMII\project_rgmii\project_RGMII\project_RGMII.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15964 H:\FPGA_basicproject\RGMII\project_rgmii\project_RGMII\project_RGMII.xpr
 # Log file: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/vivado.log
 # Journal file: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII\vivado.jou
 # Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
@@ -61,55 +61,66 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2021.2/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1612.746 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 1605.719 ; gain = 0.000
 update_compile_order -fileset sources_1
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_rgmireg'
-WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'D:/vivado/Vivado/2021.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_rgmireg' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_rgmireg_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rgmireg_behav xil_defaultlib.tb_rgmireg xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2021.2
-Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: D:/vivado/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rgmireg_behav xil_defaultlib.tb_rgmireg xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_rgmireg_behav -key {Behavioral:sim_1:Functional:tb_rgmireg} -tclbatch {tb_rgmireg.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_rgmireg.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rgmireg_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1612.746 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tfgg484-1
+Top: top_rgmii
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1747.062 ; gain = 141.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_rgmii' [H:/FPGA_basicproject/RGMII/top_rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [H:/FPGA_basicproject/RGMII/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (1#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (3#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (4#1) [H:/FPGA_basicproject/RGMII/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [H:/FPGA_basicproject/RGMII/RGMII_tx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (5#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (6#1) [H:/FPGA_basicproject/RGMII/RGMII_tx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_rgmii' (7#1) [H:/FPGA_basicproject/RGMII/top_rgmii.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1824.152 ; gain = 218.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1824.152 ; gain = 218.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1824.152 ; gain = 218.434
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1824.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1899.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 1992.891 ; gain = 387.172
+19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1992.891 ; gain = 387.172
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 17:58:28 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 21:33:29 2024...

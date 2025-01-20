@@ -19,8 +19,8 @@ assign ETH_rst = rstn;
 
 wire arp_tx_en;
 wire arp_tx_op;
-wire arp_rx_op;
-wire arp_rx_done;
+ wire arp_rx_op;
+ wire arp_rx_done;
 
 arp_ctrl arp_ctrl_inst(
     .clk(ETH_TXC),
@@ -37,8 +37,8 @@ arp_ctrl arp_ctrl_inst(
 
  wire [7:0] arp_tx_data;
  wire arp_tx_valid;
-wire [47:0] pc_mac;
-wire [31:0] pc_ip;
+ wire [47:0] pc_mac;
+ wire [31:0] pc_ip;
 
  arp arp_inst(
     .rstn(rstn),

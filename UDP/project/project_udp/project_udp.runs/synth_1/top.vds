@@ -1,0 +1,475 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Jan 20 15:03:28 2025
+# Process ID: 30596
+# Current directory: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/synth_1/top.vds
+# Journal file: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/synth_1\vivado.jou
+# Running On: DESKTOP-JNHE9QV, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31220
+WARNING: [Synth 8-992] MAC_TXC is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:42]
+WARNING: [Synth 8-992] MAC_TXV is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:43]
+WARNING: [Synth 8-992] MAC_TXD is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:44]
+WARNING: [Synth 8-992] MAC_RXC is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:46]
+WARNING: [Synth 8-992] MAC_RXV is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:47]
+WARNING: [Synth 8-992] MAC_RXD is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:48]
+WARNING: [Synth 8-992] arp_tx_en is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:85]
+WARNING: [Synth 8-992] arp_mac_txv is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:102]
+WARNING: [Synth 8-992] arp_mac_txd is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:103]
+WARNING: [Synth 8-992] arp_rx_op is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:108]
+WARNING: [Synth 8-992] arp_rx_done is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:109]
+WARNING: [Synth 8-992] udp_data_en is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:134]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'top_rgmii' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top_rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (1#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (3#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (4#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_tx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (5#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (6#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_tx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_rgmii' (7#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top_rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (8#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (9#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_tx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_tx.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (10#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (11#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'crc' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/crc32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'crc' (12#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/crc32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (13#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udp_top' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udp_tx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'udp_tx' (14#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udp_rx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:184]
+WARNING: [Synth 8-6014] Unused sequential element eth_type_reg was removed.  [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:276]
+WARNING: [Synth 8-6014] Unused sequential element des_mac_reg was removed.  [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:285]
+INFO: [Synth 8-6155] done synthesizing module 'udp_rx' (15#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'udp_top' (16#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_top.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'udp_gmii_txd' does not match port width (8) of module 'udp_top' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:151]
+WARNING: [Synth 8-3848] Net udp_mac_txd in module/entity top does not have driver. [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:59]
+WARNING: [Synth 8-3848] Net udp_mac_txv in module/entity top does not have driver. [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:1]
+WARNING: [Synth 8-7129] Port des_ip[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[23] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[22] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[21] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[20] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[19] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[18] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[17] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[16] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[15] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[14] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[13] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[12] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[11] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[10] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[9] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[8] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[7] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[6] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[5] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[4] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[3] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[2] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[1] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[0] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1453.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1453.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'arp_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'arp_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udp_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'udp_rx'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'arp_tx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                            00001 |                            00001
+                 PREAMBL |                            00010 |                            00010
+                     SFD |                            00011 |                            00011
+                ETH_MAC0 |                            00100 |                            00100
+              ETH_MAC_S0 |                            00101 |                            00101
+              ARP_START0 |                            00110 |                            00110
+              ARP_START1 |                            00111 |                            00111
+              ARP_START2 |                            01000 |                            01000
+              ARP_START3 |                            01001 |                            01001
+              ARP_START4 |                            01010 |                            01010
+                      OP |                            01011 |                            01011
+              ETH_MAC_S1 |                            01100 |                            01100
+               ETH_IP_S1 |                            01101 |                            01101
+                ETH_MAC1 |                            01110 |                            01110
+                 ETH_IP1 |                            01111 |                            01111
+              ARP_START5 |                            10000 |                            10000
+                     CRC |                            10001 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'arp_rx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                            00001 |                            00001
+                 PREAMBL |                            00010 |                            00010
+                     SFD |                            00011 |                            00011
+                ETH_MAC0 |                            00100 |                            00100
+              ETH_MAC_S0 |                            00101 |                            00101
+              ARP_START0 |                            00110 |                            00110
+              ARP_START1 |                            00111 |                            00111
+              ARP_START2 |                            01000 |                            01000
+              ARP_START3 |                            01001 |                            01001
+              ARP_START4 |                            01010 |                            01010
+                      OP |                            01011 |                            01011
+              ETH_MAC_S1 |                            01100 |                            01100
+               ETH_IP_S1 |                            01101 |                            01101
+                ETH_MAC1 |                            01110 |                            01110
+                 ETH_IP1 |                            01111 |                            01111
+              ARP_START5 |                            10000 |                            10000
+                     CRC |                            10001 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'udp_tx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                            00001 |                            00001
+               CHECK_SUM |                            00010 |                            00010
+                PRE_DATA |                            00011 |                            00011
+                ETH_HEAD |                            00100 |                            00100
+                 IP_HEAD |                            00101 |                            00101
+                UDP_HEAD |                            00110 |                            00110
+                UDP_DATA |                            00111 |                            00111
+                     CRC |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'udp_rx', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                            00001 |                            00001
+                PRE_DATA |                            00010 |                            00010
+                ETH_HEAD |                            00011 |                            00011
+                 IP_HEAD |                            00100 |                            00100
+                UDP_HEAD |                            00101 |                            00101
+                UDP_DATA |                            00110 |                            00110
+                    STOP |                            00111 |                            00111
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	  10 Input   21 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 16    
+	   3 Input      1 Bit         XORs := 12    
+	   5 Input      1 Bit         XORs := 8     
+	   7 Input      1 Bit         XORs := 14    
+	   6 Input      1 Bit         XORs := 14    
+	   4 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 6     
+	  10 Input      1 Bit         XORs := 4     
+	  12 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 2     
++---Registers : 
+	               48 Bit    Registers := 3     
+	               32 Bit    Registers := 14    
+	               16 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   9 Input   32 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 9     
+	   2 Input    8 Bit        Muxes := 13    
+	   4 Input    8 Bit        Muxes := 5     
+	   5 Input    8 Bit        Muxes := 1     
+	  18 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 2     
+	  18 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 9     
+	   2 Input    4 Bit        Muxes := 26    
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 23    
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 12    
+	   4 Input    2 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 33    
+	  18 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port des_ip[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[23] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[22] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[21] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[20] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[19] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[18] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[17] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[16] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[15] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[14] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[13] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[12] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[11] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[10] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[9] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[8] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[7] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[6] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[5] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[4] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[3] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[2] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[1] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[0] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |BUFIO  |     1|
+|3     |CARRY4 |    19|
+|4     |IDDR   |     5|
+|5     |LUT1   |    67|
+|6     |LUT2   |    68|
+|7     |LUT3   |    45|
+|8     |LUT4   |    74|
+|9     |LUT5   |   111|
+|10    |LUT6   |   305|
+|11    |MUXF7  |     2|
+|12    |ODDR   |     5|
+|13    |FDPE   |    32|
+|14    |FDRE   |   407|
+|15    |FDSE   |     4|
+|16    |IBUF   |     9|
+|17    |OBUF   |     6|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1453.414 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1453.414 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1453.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1453.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 7e7c63f9
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.414 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 20 15:04:11 2025...

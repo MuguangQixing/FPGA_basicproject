@@ -2,87 +2,15 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Tue Nov 26 19:45:32 2024
-# Process ID: 80060
-# Current directory: H:/FPGA_basicproject/ARP/project/project_arp
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent91672 H:\FPGA_basicproject\ARP\project\project_arp\project_arp.xpr
-# Log file: H:/FPGA_basicproject/ARP/project/project_arp/vivado.log
-# Journal file: H:/FPGA_basicproject/ARP/project/project_arp\vivado.jou
-# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+# Start of session at: Mon Jan 20 14:58:30 2025
+# Process ID: 23640
+# Current directory: E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32748 E:\FPGA_Project\2_FPGA_Basic_project\ARP\project\project_arp\project_arp.xpr
+# Log file: E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/vivado.log
+# Journal file: E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp\vivado.jou
+# Running On: DESKTOP-JNHE9QV, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
 #-----------------------------------------------------------
 start_gui
-open_project H:/FPGA_basicproject/ARP/project/project_arp/project_arp.xpr
+open_project E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/project_arp.xpr
 update_compile_order -fileset sources_1
 synth_design -rtl -rtl_skip_mlo -name rtl_1
-place_ports {ETH_RXD[0]} V19
-place_ports {ETH_RXD[1]} W20
-place_ports {ETH_RXD[2]} AA20
-place_ports {ETH_RXD[3]} AA21
-set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_RXD[3]} {ETH_RXD[2]} {ETH_RXD[1]} {ETH_RXD[0]}]]
-set_property package_pin "" [get_ports [list  {ETH_TXD[3]}]]
-set_property package_pin "" [get_ports [list  {ETH_TXD[1]}]]
-place_ports {ETH_TXD[0]} W21
-place_ports {ETH_TXD[1]} W22
-place_ports {ETH_TXD[2]} Y21
-place_ports {ETH_TXD[3]} Y22
-set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_TXD[3]} {ETH_TXD[2]} {ETH_TXD[1]} {ETH_TXD[0]}]]
-place_ports ETH_rst U17
-place_ports ETH_RXC W19
-place_ports ETH_RXV V18
-place_ports ETH_TXC AB21
-set_property package_pin "" [get_ports [list  key]]
-place_ports ETH_TXV AB22
-place_ports key R14
-place_ports rstn P14
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_rst]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXC]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXV]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXC]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXV]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list key]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rstn]]
-file mkdir H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new
-close [ open H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc w ]
-add_files -fileset constrs_1 H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc
-set_property target_constrs_file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc [current_fileset -constrset]
-save_constraints -force
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-open_run synth_1 -name synth_1
-current_design rtl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-current_design synth_1
-place_ports {ETH_RXD[3]} U21
-place_ports {ETH_RXD[2]} U22
-place_ports {ETH_RXD[1]} V22
-place_ports {ETH_RXD[0]} R18
-place_ports {ETH_TXD[3]} T18
-place_ports {ETH_TXD[2]} U20
-place_ports {ETH_TXD[1]} V20
-place_ports {ETH_TXD[0]} P19
-place_ports ETH_RXC Y18
-place_ports ETH_RXV P17
-place_ports ETH_TXC T21
-place_ports ETH_TXV R19
-save_constraints -force
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-close_design
-refresh_design
-open_run synth_1 -name synth_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

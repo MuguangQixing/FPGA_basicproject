@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Nov 27 14:37:50 2024
+# Process ID: 89324
+# Current directory: H:/FPGA_basicproject/ARP/project/project_arp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28816 H:\FPGA_basicproject\ARP\project\project_arp\project_arp.xpr
+# Log file: H:/FPGA_basicproject/ARP/project/project_arp/vivado.log
+# Journal file: H:/FPGA_basicproject/ARP/project/project_arp\vivado.jou
+# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project H:/FPGA_basicproject/ARP/project/project_arp/project_arp.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'H:/FPGA_basicproject/ARP/project/project_arp/project_arp.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1254.848 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/utils_1/imports/synth_1/top_arp.dcp with file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp
+launch_runs synth_1 -jobs 8
+[Wed Nov 27 14:40:14 2024] Launched synth_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 27 14:41:45 2024] Launched impl_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:30
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.848 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/H200526FBD90
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 2897.035 ; gain = 1642.188
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2927.047 ; gain = 27.859
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 2927.047 ; gain = 0.000
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/utils_1/imports/synth_1/top_arp.dcp with file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp
+launch_runs synth_1 -jobs 8
+[Wed Nov 27 14:47:37 2024] Launched synth_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 27 14:48:32 2024] Launched impl_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2970.766 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/H200526FBD90
+open_hw_target: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 2975.836 ; gain = 5.070
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 2975.836 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2975.836 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2975.836 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 2975.836 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/utils_1/imports/synth_1/top_arp.dcp with file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp
+launch_runs synth_1 -jobs 8
+[Wed Nov 27 15:12:55 2024] Launched synth_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 27 15:13:42 2024] Launched impl_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2975.836 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 2975.836 ; gain = 0.000
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/utils_1/imports/synth_1/top_arp.dcp with file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp
+launch_runs synth_1 -jobs 8
+[Wed Nov 27 15:22:30 2024] Launched synth_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 27 15:23:40 2024] Launched impl_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 2979.941 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 2979.941 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 2985.297 ; gain = 5.355
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tfgg484-1
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3304.238 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3390.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 3556.574 ; gain = 571.277
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/utils_1/imports/synth_1/top_arp.dcp with file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp
+launch_runs synth_1 -jobs 8
+[Wed Nov 27 15:36:35 2024] Launched synth_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 27 15:37:58 2024] Launched impl_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4000.723 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list top_rgmii_inst/rgmii_rx_inst/mac_rxc ]]
+connect_debug_port u_ila_1/clk [get_nets [list ETH_RXC_IBUF_BUFG ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {arp_inst/arp_tx_inst/cnt_byte[0]} {arp_inst/arp_tx_inst/cnt_byte[1]} {arp_inst/arp_tx_inst/cnt_byte[2]} {arp_inst/arp_tx_inst/cnt_byte[3]} {arp_inst/arp_tx_inst/cnt_byte[4]} {arp_inst/arp_tx_inst/cnt_byte[5]} {arp_inst/arp_tx_inst/cnt_byte[6]} {arp_inst/arp_tx_inst/cnt_byte[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {pc_ip[0]} {pc_ip[1]} {pc_ip[2]} {pc_ip[3]} {pc_ip[4]} {pc_ip[5]} {pc_ip[6]} {pc_ip[7]} {pc_ip[8]} {pc_ip[9]} {pc_ip[10]} {pc_ip[11]} {pc_ip[12]} {pc_ip[13]} {pc_ip[14]} {pc_ip[15]} {pc_ip[16]} {pc_ip[17]} {pc_ip[18]} {pc_ip[19]} {pc_ip[20]} {pc_ip[21]} {pc_ip[22]} {pc_ip[23]} {pc_ip[24]} {pc_ip[25]} {pc_ip[26]} {pc_ip[27]} {pc_ip[28]} {pc_ip[29]} {pc_ip[30]} {pc_ip[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 48 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {pc_mac[0]} {pc_mac[1]} {pc_mac[2]} {pc_mac[3]} {pc_mac[4]} {pc_mac[5]} {pc_mac[6]} {pc_mac[7]} {pc_mac[8]} {pc_mac[9]} {pc_mac[10]} {pc_mac[11]} {pc_mac[12]} {pc_mac[13]} {pc_mac[14]} {pc_mac[15]} {pc_mac[16]} {pc_mac[17]} {pc_mac[18]} {pc_mac[19]} {pc_mac[20]} {pc_mac[21]} {pc_mac[22]} {pc_mac[23]} {pc_mac[24]} {pc_mac[25]} {pc_mac[26]} {pc_mac[27]} {pc_mac[28]} {pc_mac[29]} {pc_mac[30]} {pc_mac[31]} {pc_mac[32]} {pc_mac[33]} {pc_mac[34]} {pc_mac[35]} {pc_mac[36]} {pc_mac[37]} {pc_mac[38]} {pc_mac[39]} {pc_mac[40]} {pc_mac[41]} {pc_mac[42]} {pc_mac[43]} {pc_mac[44]} {pc_mac[45]} {pc_mac[46]} {pc_mac[47]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list arp_rx_done ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list arp_rx_op ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list arp_inst/arp_rx_inst/error ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 4024.855 ; gain = 0.000
+[Wed Nov 27 15:41:09 2024] Launched impl_1...
+Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/runme.log
+set_property PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 4029.348 ; gain = 4.492
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3419] Disconnecting from hw_server since it's not responding to requests.  It is recommended to investigate hw_server to find any issues.
+ERROR: [Xicom 50-224] Failed to get JTAG register list: Invalid URL: .
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+INFO: [Common 17-344] 'refresh_hw_device' was cancelled
+ERROR: [Labtoolstcl 44-695] HW Server shut down, disconnecting from server: localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+connect_hw_server: Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 4029.348 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/H200526FBD90
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 4033.730 ; gain = 4.383
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 4033.730 ; gain = 0.000
+set_property PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 4033.730 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 4033.730 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 27 15:50:16 2024...

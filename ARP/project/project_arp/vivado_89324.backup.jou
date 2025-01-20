@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Nov 27 14:37:50 2024
+# Process ID: 89324
+# Current directory: H:/FPGA_basicproject/ARP/project/project_arp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28816 H:\FPGA_basicproject\ARP\project\project_arp\project_arp.xpr
+# Log file: H:/FPGA_basicproject/ARP/project/project_arp/vivado.log
+# Journal file: H:/FPGA_basicproject/ARP/project/project_arp\vivado.jou
+# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project H:/FPGA_basicproject/ARP/project/project_arp/project_arp.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list top_rgmii_inst/rgmii_rx_inst/mac_rxc ]]
+connect_debug_port u_ila_1/clk [get_nets [list ETH_RXC_IBUF_BUFG ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {arp_inst/arp_tx_inst/cnt_byte[0]} {arp_inst/arp_tx_inst/cnt_byte[1]} {arp_inst/arp_tx_inst/cnt_byte[2]} {arp_inst/arp_tx_inst/cnt_byte[3]} {arp_inst/arp_tx_inst/cnt_byte[4]} {arp_inst/arp_tx_inst/cnt_byte[5]} {arp_inst/arp_tx_inst/cnt_byte[6]} {arp_inst/arp_tx_inst/cnt_byte[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {pc_ip[0]} {pc_ip[1]} {pc_ip[2]} {pc_ip[3]} {pc_ip[4]} {pc_ip[5]} {pc_ip[6]} {pc_ip[7]} {pc_ip[8]} {pc_ip[9]} {pc_ip[10]} {pc_ip[11]} {pc_ip[12]} {pc_ip[13]} {pc_ip[14]} {pc_ip[15]} {pc_ip[16]} {pc_ip[17]} {pc_ip[18]} {pc_ip[19]} {pc_ip[20]} {pc_ip[21]} {pc_ip[22]} {pc_ip[23]} {pc_ip[24]} {pc_ip[25]} {pc_ip[26]} {pc_ip[27]} {pc_ip[28]} {pc_ip[29]} {pc_ip[30]} {pc_ip[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 48 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {pc_mac[0]} {pc_mac[1]} {pc_mac[2]} {pc_mac[3]} {pc_mac[4]} {pc_mac[5]} {pc_mac[6]} {pc_mac[7]} {pc_mac[8]} {pc_mac[9]} {pc_mac[10]} {pc_mac[11]} {pc_mac[12]} {pc_mac[13]} {pc_mac[14]} {pc_mac[15]} {pc_mac[16]} {pc_mac[17]} {pc_mac[18]} {pc_mac[19]} {pc_mac[20]} {pc_mac[21]} {pc_mac[22]} {pc_mac[23]} {pc_mac[24]} {pc_mac[25]} {pc_mac[26]} {pc_mac[27]} {pc_mac[28]} {pc_mac[29]} {pc_mac[30]} {pc_mac[31]} {pc_mac[32]} {pc_mac[33]} {pc_mac[34]} {pc_mac[35]} {pc_mac[36]} {pc_mac[37]} {pc_mac[38]} {pc_mac[39]} {pc_mac[40]} {pc_mac[41]} {pc_mac[42]} {pc_mac[43]} {pc_mac[44]} {pc_mac[45]} {pc_mac[46]} {pc_mac[47]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list arp_rx_done ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list arp_rx_op ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list arp_inst/arp_rx_inst/error ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

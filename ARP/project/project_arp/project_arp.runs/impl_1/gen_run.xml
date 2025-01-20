@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1732622815">
+<GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1734423514">
+  <File Type="OPT-HWDEF" Name="top_arp.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_arp_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="top_arp.dcp"/>
   <File Type="ROUTE-PWR" Name="top_arp_power_routed.rpt"/>
   <File Type="PA-TCL" Name="top_arp.tcl"/>
   <File Type="BITSTR-MMI" Name="top_arp.mmi"/>
@@ -10,7 +13,6 @@
   <File Type="OPT-TIMING" Name="top_arp_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="top_arp_opt.dcp"/>
   <File Type="OPT-DRC" Name="top_arp_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="top_arp.hwdef"/>
   <File Type="PWROPT-DCP" Name="top_arp_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="top_arp_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="top_arp_timing_summary_pwropted.rpt"/>
@@ -48,7 +50,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="top_arp_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="top_arp_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="top_arp_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="top_arp_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="top_arp_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="top_arp_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_arp_postroute_physopt.dcp"/>

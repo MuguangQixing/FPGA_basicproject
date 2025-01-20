@@ -2,66 +2,38 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Tue Nov 26 19:45:32 2024
-# Process ID: 80060
-# Current directory: H:/FPGA_basicproject/ARP/project/project_arp
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent91672 H:\FPGA_basicproject\ARP\project\project_arp\project_arp.xpr
-# Log file: H:/FPGA_basicproject/ARP/project/project_arp/vivado.log
-# Journal file: H:/FPGA_basicproject/ARP/project/project_arp\vivado.jou
-# Running On: DESKTOP-DQRH7QF, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+# Start of session at: Mon Jan 20 14:58:30 2025
+# Process ID: 23640
+# Current directory: E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32748 E:\FPGA_Project\2_FPGA_Basic_project\ARP\project\project_arp\project_arp.xpr
+# Log file: E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/vivado.log
+# Journal file: E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp\vivado.jou
+# Running On: DESKTOP-JNHE9QV, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
 #-----------------------------------------------------------
 start_gui
-open_project H:/FPGA_basicproject/ARP/project/project_arp/project_arp.xpr
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at D:/vivado/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'H:/FPGA_basicproject/ARP/project/project_arp/project_arp.gen/sources_1'.
+open_project E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/project_arp.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'H:/FPGA_basicproject/ARP/project/project_arp' since last save.
+INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/project_arp.gen/sources_1', nor could it be found using path 'H:/FPGA_basicproject/ARP/project/project_arp/project_arp.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2021.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 1564.199 ; gain = 0.000
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/XilinxSoftware/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1452.188 ; gain = 0.000
 update_compile_order -fileset sources_1
 synth_design -rtl -rtl_skip_mlo -name rtl_1
 Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
@@ -70,45 +42,42 @@ Using part: xc7a35tfgg484-1
 Top: top_arp
 INFO: [Device 21-403] Loading part xc7a35tfgg484-1
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1736.305 ; gain = 172.105
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1947.957 ; gain = 337.684
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top_arp' [H:/FPGA_basicproject/ARP/top_arp.v:1]
-INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [H:/FPGA_basicproject/ARP/arp_ctrl.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (1#1) [H:/FPGA_basicproject/ARP/arp_ctrl.v:1]
-INFO: [Synth 8-6157] synthesizing module 'arp' [H:/FPGA_basicproject/ARP/arp.v:1]
-INFO: [Synth 8-6157] synthesizing module 'arp_tx' [H:/FPGA_basicproject/ARP/arp_tx.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [H:/FPGA_basicproject/ARP/arp_tx.v:185]
-INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (2#1) [H:/FPGA_basicproject/ARP/arp_tx.v:1]
-INFO: [Synth 8-6157] synthesizing module 'arp_rx' [H:/FPGA_basicproject/ARP/arp_rx.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (3#1) [H:/FPGA_basicproject/ARP/arp_rx.v:1]
-INFO: [Synth 8-6157] synthesizing module 'crc' [H:/FPGA_basicproject/ARP/crc32.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'crc' (4#1) [H:/FPGA_basicproject/ARP/crc32.v:1]
-WARNING: [Synth 8-3848] Net des_mac in module/entity arp does not have driver. [H:/FPGA_basicproject/ARP/arp.v:35]
-WARNING: [Synth 8-3848] Net des_ip in module/entity arp does not have driver. [H:/FPGA_basicproject/ARP/arp.v:36]
-WARNING: [Synth 8-3848] Net crc_data in module/entity arp does not have driver. [H:/FPGA_basicproject/ARP/arp.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'arp' (5#1) [H:/FPGA_basicproject/ARP/arp.v:1]
-INFO: [Synth 8-6157] synthesizing module 'top_rgmii' [H:/FPGA_basicproject/ARP/top_rgmii.v:1]
-INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [H:/FPGA_basicproject/ARP/RGMII_rx.v:2]
-INFO: [Synth 8-6157] synthesizing module 'IDDR' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+INFO: [Synth 8-6157] synthesizing module 'top_arp' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/top_arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (1#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp_tx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp_tx.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (2#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (3#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'crc' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/crc32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'crc' (4#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/crc32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (5#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'top_rgmii' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/top_rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
 	Parameter INIT_Q1 bound to: 1'b0 
 	Parameter INIT_Q2 bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IDDR' (6#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6157] synthesizing module 'BUFIO' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
-INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (8#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
-INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (9#1) [H:/FPGA_basicproject/ARP/RGMII_rx.v:2]
-INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [H:/FPGA_basicproject/ARP/RGMII_tx.v:2]
-INFO: [Synth 8-6157] synthesizing module 'ODDR' [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (6#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (8#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (9#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [E:/FPGA_Project/2_FPGA_Basic_project/ARP/RGMII_tx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: SYNC - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'ODDR' (10#1) [D:/vivado/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
-INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (11#1) [H:/FPGA_basicproject/ARP/RGMII_tx.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'top_rgmii' (12#1) [H:/FPGA_basicproject/ARP/top_rgmii.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'top_arp' (13#1) [H:/FPGA_basicproject/ARP/top_arp.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (10#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (11#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/RGMII_tx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_rgmii' (12#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/top_rgmii.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_arp' (13#1) [E:/FPGA_Project/2_FPGA_Basic_project/ARP/top_arp.v:1]
 WARNING: [Synth 8-7129] Port des_ip[31] in module arp_tx is either unconnected or has no load
 WARNING: [Synth 8-7129] Port des_ip[30] in module arp_tx is either unconnected or has no load
 WARNING: [Synth 8-7129] Port des_ip[29] in module arp_tx is either unconnected or has no load
@@ -142,179 +111,37 @@ WARNING: [Synth 8-7129] Port des_ip[2] in module arp_tx is either unconnected or
 WARNING: [Synth 8-7129] Port des_ip[1] in module arp_tx is either unconnected or has no load
 WARNING: [Synth 8-7129] Port des_ip[0] in module arp_tx is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1819.816 ; gain = 255.617
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2010.484 ; gain = 400.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1819.816 ; gain = 255.617
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2010.484 ; gain = 400.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1819.816 ; gain = 255.617
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2010.484 ; gain = 400.211
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1819.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2010.484 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA_Project/2_FPGA_Basic_project/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_arp_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_arp_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1922.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2113.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 2013.449 ; gain = 449.250
-32 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2228.539 ; gain = 618.266
+33 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2013.449 ; gain = 449.250
-place_ports {ETH_RXD[0]} V19
-place_ports {ETH_RXD[1]} W20
-place_ports {ETH_RXD[2]} AA20
-place_ports {ETH_RXD[3]} AA21
-set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_RXD[3]} {ETH_RXD[2]} {ETH_RXD[1]} {ETH_RXD[0]}]]
-set_property package_pin "" [get_ports [list  {ETH_TXD[3]}]]
-set_property package_pin "" [get_ports [list  {ETH_TXD[1]}]]
-place_ports {ETH_TXD[0]} W21
-place_ports {ETH_TXD[1]} W22
-place_ports {ETH_TXD[2]} Y21
-place_ports {ETH_TXD[3]} Y22
-set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_TXD[3]} {ETH_TXD[2]} {ETH_TXD[1]} {ETH_TXD[0]}]]
-place_ports ETH_rst U17
-place_ports ETH_RXC W19
-place_ports ETH_RXV V18
-place_ports ETH_TXC AB21
-set_property package_pin "" [get_ports [list  key]]
-place_ports ETH_TXV AB22
-place_ports key R14
-place_ports rstn P14
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_rst]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXC]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXV]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXC]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXV]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list key]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rstn]]
-file mkdir H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new
-close [ open H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc w ]
-add_files -fileset constrs_1 H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc
-set_property target_constrs_file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc [current_fileset -constrset]
-save_constraints -force
-launch_runs synth_1 -jobs 8
-WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-[Tue Nov 26 19:56:54 2024] Launched synth_1...
-Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a35tfgg484-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2040.910 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
-Finished Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2068.426 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-current_design rtl_1
-reset_run synth_1
-INFO: [Project 1-1160] Copying file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp to H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/utils_1/imports/synth_1 and adding it to utils fileset
-launch_runs synth_1 -jobs 8
-[Tue Nov 26 20:01:42 2024] Launched synth_1...
-Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
-current_design synth_1
-place_ports {ETH_RXD[3]} U21
-place_ports {ETH_RXD[2]} U22
-place_ports {ETH_RXD[1]} V22
-place_ports {ETH_RXD[0]} R18
-place_ports {ETH_TXD[3]} T18
-place_ports {ETH_TXD[2]} U20
-place_ports {ETH_TXD[1]} V20
-place_ports {ETH_TXD[0]} P19
-place_ports ETH_RXC Y18
-place_ports ETH_RXV P17
-place_ports ETH_TXC T21
-place_ports ETH_TXV R19
-save_constraints -force
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/utils_1/imports/synth_1/top_arp.dcp with file H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp
-launch_runs synth_1 -jobs 8
-[Tue Nov 26 20:05:35 2024] Launched synth_1...
-Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Nov 26 20:06:56 2024] Launched impl_1...
-Run output will be captured here: H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/runme.log
-close_design
-refresh_design
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
-Finished Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
-Completed Processing XDC Constraints
-
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a35tfgg484-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2695.457 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
-Finished Parsing XDC File [H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2695.457 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2021.2
-  **** Build date : Oct 19 2021 at 03:13:30
-    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2021.2.0
-  ****** Build date   : Sep 28 2021-05:44:20
-    **** Build number : 2021.2.1632779060
-      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 2695.457 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/H200526FBD90
-open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 4479.293 ; gain = 1783.836
-set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 4509.875 ; gain = 26.105
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 4509.875 ; gain = 0.000
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-refresh_hw_device: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 4509.875 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2228.539 ; gain = 776.352
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 20:33:14 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 20 15:11:54 2025...

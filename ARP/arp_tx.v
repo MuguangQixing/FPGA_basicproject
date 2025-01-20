@@ -7,9 +7,9 @@ module arp_tx(
     input [47:0] des_mac,//接收到请求包(源mac)，发送应答包(目标mac)
     input [31:0] des_ip,//接收到请求包(源ip)，发送应答包(目标ip)
 
-    output reg [7:0]  arp_tx_data,//数据发送给RGMII接口
-    output reg arp_tx_valid,    //数据有效信号
-    output wire arp_tx_done,
+    (* MARK_DEBUG="true" *) output reg [7:0]  arp_tx_data,//数据发送给RGMII接口
+    (* MARK_DEBUG="true" *) output reg arp_tx_valid,    //数据有效信号
+    (* MARK_DEBUG="true" *) output wire arp_tx_done,
 
 
     input [31:0] crc_data,
@@ -20,13 +20,13 @@ module arp_tx(
 parameter FPGA_MAC = 48'h00_11_22_33_44_55;
 parameter FPGA_IP =  32'hc0_a8_00_03;
 
-parameter PC_IP   =  32'hac_1c_4a_90;
-parameter PC_MAX  =  48'hff_ff_ff_ff_ff_ff;//以广播形式发送
+parameter PC_IP   =  32'hc0_a8_00_91;// 192.168.0.145
+parameter PC_MAC  =  48'hff_ff_ff_ff_ff_ff;//以广播形式发送
 
 
 localparam  IDLE        = 1;
 localparam  PREAMBL     = 2;    //前导码
-localparam  SFD         = 3;    //帧起始定界符
+localparam  SFD         = 3;    //帧起始界定符
 localparam  ETH_MAC0    = 4;    //目的mac
 localparam  ETH_MAC_S0  = 5;    //源mac
 localparam  ARP_START0  = 6;    //长度/类型
@@ -42,9 +42,10 @@ localparam  ETH_IP1     = 15;   // 目的ip
 localparam  ARP_START5  = 16;   // 18个字节00填充,因为以太网要求46-1500字节
 localparam  CRC         = 17;   // crc32校验
 
-reg [4:0] state, next_state;
+(* MARK_DEBUG="true" *) reg [4:0] state;
+reg [4:0] next_state;
 
-reg [7:0] cnt_byte;//字节的计数
+(* MARK_DEBUG="true" *) reg [7:0] cnt_byte;//字节的计数
 
 always @(posedge arp_tx_clk) begin
     if(~rstn)

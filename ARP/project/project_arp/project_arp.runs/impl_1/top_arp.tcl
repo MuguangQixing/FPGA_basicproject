@@ -126,29 +126,14 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 4
-  set_param synth.incrementalSynthesisCache H:/FPGA_basicproject/ARP/project/project_arp/.Xil/Vivado-80060-DESKTOP-DQRH7QF/incrSyn
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a35tfgg484-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
+  set_param synth.incrementalSynthesisCache H:/FPGA_basicproject/ARP/project/project_arp/.Xil/Vivado-23884-DESKTOP-DQRH7QF/incrSyn
+  set_param xicom.use_bs_reader 1
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/impl_1/top_arp.dcp
   set_property webtalk.parent_dir H:/FPGA_basicproject/ARP/project/project_arp/project_arp.cache/wt [current_project]
   set_property parent.project_path H:/FPGA_basicproject/ARP/project/project_arp/project_arp.xpr [current_project]
   set_property ip_output_repo H:/FPGA_basicproject/ARP/project/project_arp/project_arp.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet H:/FPGA_basicproject/ARP/project/project_arp/project_arp.runs/synth_1/top_arp.dcp
-OPTRACE "read constraints: implementation" START { }
-  read_xdc H:/FPGA_basicproject/ARP/project/project_arp/project_arp.srcs/constrs_1/new/pin.xdc
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top top_arp -part xc7a35tfgg484-1 
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }

@@ -1,0 +1,245 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Jan 20 14:40:45 2025
+# Process ID: 12204
+# Current directory: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17864 E:\FPGA_Project\2_FPGA_Basic_project\UDP\project\project_udp\project_udp.xpr
+# Log file: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/vivado.log
+# Journal file: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp\vivado.jou
+# Running On: DESKTOP-JNHE9QV, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16893 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at E:/XilinxSoftware/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/XilinxSoftware/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1414.039 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tfgg484-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+WARNING: [Synth 8-992] MAC_TXC is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:42]
+WARNING: [Synth 8-992] MAC_TXV is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:43]
+WARNING: [Synth 8-992] MAC_TXD is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:44]
+WARNING: [Synth 8-992] MAC_RXC is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:46]
+WARNING: [Synth 8-992] MAC_RXV is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:47]
+WARNING: [Synth 8-992] MAC_RXD is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:48]
+WARNING: [Synth 8-992] arp_tx_en is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:85]
+WARNING: [Synth 8-992] arp_mac_txv is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:102]
+WARNING: [Synth 8-992] arp_mac_txd is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:103]
+WARNING: [Synth 8-992] arp_rx_op is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:108]
+WARNING: [Synth 8-992] arp_rx_done is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:109]
+WARNING: [Synth 8-992] udp_data_en is already implicitly declared earlier [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:134]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1930.973 ; gain = 340.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'top_rgmii' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top_rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (1#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:57178]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (3#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (4#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_tx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (5#1) [E:/XilinxSoftware/Vivado/2021.2/scripts/rt/data/unisim_comp.v:74749]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (6#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/RGMII_tx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_rgmii' (7#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top_rgmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (8#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'arp_ctrl' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp_ctrl' (9#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_tx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_tx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_tx.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'arp_tx' (10#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arp_rx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp_rx' (11#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'crc' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/crc32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'crc' (12#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/crc32.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'arp' (13#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/arp.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udp_top' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udp_tx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'udp_tx' (14#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udp_rx' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:184]
+WARNING: [Synth 8-6014] Unused sequential element eth_type_reg was removed.  [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:276]
+WARNING: [Synth 8-6014] Unused sequential element des_mac_reg was removed.  [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:285]
+INFO: [Synth 8-6155] done synthesizing module 'udp_rx' (15#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'udp_top' (16#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/udp_top.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'udp_gmii_txd' does not match port width (8) of module 'udp_top' [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:151]
+WARNING: [Synth 8-3848] Net udp_mac_txd in module/entity top does not have driver. [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:59]
+WARNING: [Synth 8-3848] Net udp_mac_txv in module/entity top does not have driver. [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [E:/FPGA_Project/2_FPGA_Basic_project/UDP/top.v:1]
+WARNING: [Synth 8-7129] Port des_ip[31] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[30] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[29] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[28] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[27] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[26] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[25] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[24] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[23] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[22] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[21] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[20] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[19] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[18] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[17] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[16] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[15] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[14] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[13] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[12] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[11] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[10] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[9] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[8] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[7] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[6] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[5] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[4] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[3] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[2] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[1] in module arp_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port des_ip[0] in module arp_tx is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2000.578 ; gain = 409.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2018.523 ; gain = 427.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2018.523 ; gain = 427.746
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2030.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2139.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 2224.234 ; gain = 633.457
+41 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2224.234 ; gain = 810.195
+place_ports {ETH_RXD[0]} V19
+place_ports {ETH_RXD[1]} W20
+place_ports {ETH_RXD[2]} AA21
+place_ports {ETH_RXD[2]} AA20
+place_ports {ETH_RXD[3]} AA21
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_RXD[3]} {ETH_RXD[2]} {ETH_RXD[1]} {ETH_RXD[0]}]]
+place_ports {ETH_TXD[0]} W21
+place_ports {ETH_TXD[1]} W22
+place_ports {ETH_TXD[2]} Y21
+place_ports {ETH_TXD[3]} Y22
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_TXD[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {ETH_TXD[3]} {ETH_TXD[2]} {ETH_TXD[1]} {ETH_TXD[0]}]]
+set_property package_pin "" [get_ports [list  ETH_RXC]]
+place_ports ETH_RXC W19
+place_ports ETH_RXV V18
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXC]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_RXV]]
+place_ports ETH_TXC AB21
+place_ports ETH_TXV AB22
+place_ports key1 R14
+place_ports key2 P14
+place_ports rstn N14
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXC]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list ETH_TXV]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list key1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list key2]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rstn]]
+file mkdir E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new
+close [ open E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc w ]
+add_files -fileset constrs_1 E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc
+set_property target_constrs_file E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.srcs/constrs_1/new/pin.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs synth_1 -jobs 8
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Mon Jan 20 15:03:25 2025] Launched synth_1...
+Run output will be captured here: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jan 20 15:05:01 2025] Launched impl_1...
+Run output will be captured here: E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:30
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 28 2021-05:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2025 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2265.918 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/H200526FBD90
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4009.164 ; gain = 1743.246
+set_property PROGRAM.FILE {E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/FPGA_Project/2_FPGA_Basic_project/UDP/project/project_udp/project_udp.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 20 15:11:59 2025...

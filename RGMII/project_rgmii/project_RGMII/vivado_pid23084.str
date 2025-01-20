@@ -1,0 +1,160 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 23084
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Dec 07 11:57:54 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/vivado/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	D:/vivado/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	31624
+User home directory: C:/Users/31624
+User working directory: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/vivado/Vivado
+HDI_APPROOT: D:/vivado/Vivado/2021.2
+RDI_DATADIR: D:/vivado/Vivado/2021.2/data
+RDI_BINDIR: D:/vivado/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/31624/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/31624/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/31624/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	D:/vivado/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/vivado.log
+Vivado journal file: 	H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/vivado.jou
+Engine tmp dir: 	H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/.Xil/Vivado-23084-DESKTOP-DQRH7QF
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/vivado/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: D:/vivado/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: D:/vivado/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: D:/vivado/Vivado/2021.2
+XILINX_VIVADO: D:/vivado/Vivado/2021.2
+XILINX_VIVADO_HLS: D:/vivado/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,218 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: H:\FPGA_basicproject\RGMII\project_rgmii\project_RGMII\project_RGMII.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.xpr 
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,218 MB. GUI used memory: 57 MB. Current time: 12/7/24, 11:57:55 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII/project_RGMII.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 75 MB (+76220kb) [00:00:19]
+// [Engine Memory]: 1,218 MB (+1125353kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  3597 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2021.2/data/ip'. 
+// [GUI Memory]: 90 MB (+11904kb) [00:00:22]
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:11 . Memory (MB): peak = 1237.977 ; gain = 0.000 
+// [GUI Memory]: 116 MB (+22053kb) [00:00:22]
+// Project name: project_RGMII; location: H:/FPGA_basicproject/RGMII/project_rgmii/project_RGMII; part: xc7a35tfgg484-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // n
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a35tfgg484-1 Top: tb_rgmireg 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,515 MB. GUI used memory: 63 MB. Current time: 12/7/24, 11:58:45 AM CST
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tfgg484-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1717.016 ; gain = 341.160 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'tb_rgmireg' [H:/FPGA_basicproject/RGMII/tb_rgmii.v:3] 
+// Tcl Message: ERROR: [Synth 8-91] ambiguous clock in event control [H:/FPGA_basicproject/RGMII/tb_rgmii.v:42] ERROR: [Synth 8-6156] failed synthesizing module 'tb_rgmireg' [H:/FPGA_basicproject/RGMII/tb_rgmii.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1801.258 ; gain = 425.402 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 2 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// Elapsed time: 27 seconds
+dismissDialog("Open Elaborated Design"); // bA
+// [Engine Memory]: 1,642 MB (+381228kb) [00:01:09]
+dismissDialog("Critical Messages"); // W
+// PAPropertyPanels.initPanels (tb_rgmii.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rgmireg (tb_rgmii.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rgmireg (tb_rgmii.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 11 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rgmireg (tb_rgmii.v)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files H:/FPGA_basicproject/RGMII/tb_rgmii.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  H:/FPGA_basicproject/RGMII/tb_rgmii.v 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,642 MB. GUI used memory: 65 MB. Current time: 12/7/24, 11:59:38 AM CST
+// Elapsed time: 56 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,642 MB. GUI used memory: 65 MB. Current time: 12/7/24, 12:00:08 PM CST
+// Elapsed time: 21 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
